@@ -1,0 +1,14 @@
+- favicon FT
+- luna e sole per switch da tema scuro a chiaro
+- home con chi sono
+- navbar con sezioni: contatti, progetti
+effetto fade quando le scritte finiscono dietro la navbar
+a sx logo per tornare alla home
+- scrollbar carina
+- nei progetti: che ruolo ho avuto
+- responsive
+- download cv
+- tema chiaro con palette pearl
+- navbar in file a parte
+- icone stile notion nelle descrizioni
+- goTop
