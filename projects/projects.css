@@ -10,14 +10,23 @@ body{
     transition: 0.3s;
 }
 
+/*
+.box-mode{
+
+}
+*/
+
 .nav_menu,
 h1,
-h2,
-.btn{
+h2{
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     cursor: default;
+}
+
+h1{
+    text-align: center;
 }
 
 h2{
@@ -41,6 +50,11 @@ p{
     text-decoration: none;
     height: 10rem;
     box-shadow: 0 0 1rem #0F0F25;
+}
+
+.nav_menu-mode{
+    background: #C8E7FF;
+    color: #0F0F25;
 }
 
 .navbar-nav{
@@ -118,38 +132,31 @@ a:hover{
 }
 
 .box1,
+.box2{
+    padding: 2rem 4rem;
+    width: 45%;
+    text-align: center;
+}
+
 .box3{
     width: 10%;
 }
 
-.box2{
-    width: 80%;
-    text-align: center;
-}
-
-.about{
+.project_box{
+    margin-top: 4.3rem;
     padding: 2rem 5rem;
     text-align: left;
-    display: flex;
     background: #772C53;
+    border: #DFD6D0;
     border-radius: 2%;
-    cursor: default;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.about-mode{
-    background: #C8E7FF;
-}
-
-.about_box1{
-    width: 70%;
-    text-align: left;
-    justify-content: left;
-}
-
-.about_box2{
-    margin-top: 10rem;
-    width: 30%;
-    justify-content: right;
+.project_box:hover{
+    background: #DFD6D0;
+    color: #0F0F25;
+    transform: scale(1.05);
 }
 
 .top_button{
@@ -170,11 +177,6 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
     height: 5rem;
-    margin-top: 10rem;
-    margin-bottom: 0;
+    margin-top: 15rem;
     cursor: default;
-}
-
-.footer-mode{
-    background: #C8E7FF;
 }

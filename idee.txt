@@ -1,8 +1,6 @@
 - luna e sole per switch da tema scuro a chiaro
-- effetto fade quando le scritte finiscono dietro la navbar
-- nei progetti: che ruolo ho avuto
-- responsive
 - download cv
-- tema chiaro con palette pearl
-- icone stile notion nelle descrizioni
-- github pages
+- tema chiaro
+- include navbar
+- hover icon change mode
+- bottone navbar transizione nelle scritte

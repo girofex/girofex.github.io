@@ -3,7 +3,7 @@
 
 <head>
     <title>Home</title>
-    <link rel="shortcut icon" href="../img/FT.png">
+    <link rel="shortcut icon" href="img/FT.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,15 +33,15 @@
             <ul class="nav navbar-nav">
                 <div class="nav_box1">
                     <li>
-                        <div class="logo" style="z-index: 1">
-                            <img src="img/moon.png" alt="logo" style="width: 4rem; height: 4rem">
+                        <div class="logo" style="z-index: 1;  cursor: pointer">
+                            <img id="mode" src="img/moon.png" alt="logo" style="width: 4rem; height: 4rem" onclick="switchMode()">
                         </div>
                     </li>
                 </div>
 
                 <div class="nav_box2">
                     <li>
-                        <a class="name" href="index.html" style="text-align: center; font-size: 2rem">Federica Tamerisco</a>
+                        <a class="name" href="index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
                     </li>
                 </div>
 
@@ -79,34 +79,38 @@
                 <br>
             </p>
 
-            <div class="about">               
+            <div class="about" id="about">               
                 <div class="about_box1">
                     <h1>About me</h1>
-                    <h2>Living in: </h2>
+                    <h2><img src="img/light pin.png" style="margin-right: 1rem">Living in: </h2>
                         <p style="font-size: 2rem">Finale Ligure, Italy</p>
-                    <h2>Languages spoken: </h2>
+                    <h2><img src="img/light language.png" style="width: 3rem; margin-right: 1rem">Languages spoken: </h2>
                         <p style="font-size: 2rem">Italian and English</p>
-                    <h2>Interests: </h2>
+                    <h2><img src="img/light heart.png" style="width: 3rem; margin-right: 1rem; margin-bottom: 1rem">Interests: </h2>
                         <p style="font-size: 2rem">...</p>
+                    
+                    <button type="button" class="btn" style="margin-top: 10rem; margin-bottom: 2rem">
+                        <a href="contacts/contacts.html">CV</a>
+                    </button>
                 </div>
                 
                 <div class="about_box_2">
-                    <img src="img/me.png" alt="Photo" style="width: 16rem; height: 20rem; margin-top: 7rem; border-radius: 10%">
+                    <img src="img/me.png" alt="Photo" style="width: 16rem; height: 20rem; margin-top: 15rem; border-radius: 10%">
                 </div>
             </div>
         </div>
 
         <div class="box3">
-            <div class="top_button" onclick="GoTop()">
+            <div class="top_button" id="top_button" onclick="GoTop()">
                 <a href="#head">
-                    <img src="img/arrow.png" style="width: 5rem" alt="Go to the top">
+                    <img src="img/light arrow.png" style="width: 5rem" alt="Go to the top">
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="footer">
-        Federica Tamerisco copyright @2024
+    <div class="footer" id="footer">
+        <p style="padding: 1.5rem">Federica Tamerisco copyright @2024</p>
     </div>
 
     <script src="index.js"></script>

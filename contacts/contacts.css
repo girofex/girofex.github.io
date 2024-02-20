@@ -10,10 +10,15 @@ body{
     transition: 0.3s;
 }
 
+/*
+.box-mode{
+
+}
+*/
+
 .nav_menu,
 h1,
-h2,
-.btn{
+h2{
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
@@ -127,42 +132,14 @@ a:hover{
     text-align: center;
 }
 
-.about{
+.contact_box{
+    margin-top: 4.3rem;
     padding: 2rem 5rem;
     text-align: left;
-    display: flex;
     background: #772C53;
+    border: #DFD6D0;
     border-radius: 2%;
     cursor: default;
-}
-
-.about-mode{
-    background: #C8E7FF;
-}
-
-.about_box1{
-    width: 70%;
-    text-align: left;
-    justify-content: left;
-}
-
-.about_box2{
-    margin-top: 10rem;
-    width: 30%;
-    justify-content: right;
-}
-
-.top_button{
-    bottom: 7rem;
-    right: 5rem;
-    position: -webkit-sticky;
-    position: sticky;
-    position: fixed;
-    display: none;
-}
-
-.top_button.visible{
-    display: block;
 }
 
 .footer{
@@ -170,11 +147,6 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
     height: 5rem;
-    margin-top: 10rem;
-    margin-bottom: 0;
+    margin-top: 15rem;
     cursor: default;
-}
-
-.footer-mode{
-    background: #C8E7FF;
 }
