@@ -1,0 +1,158 @@
+body{
+    background: #44143C;
+    color: #DFD6D0;
+}
+
+.nav_menu,
+h1,
+h2{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+p{
+    font-family: "Comfortaa", sans-serif;
+    cursor: default;
+}
+
+.nav_menu,
+.footer{
+    background: #772C53;
+}
+
+.nav_menu{
+    margin-top: 0;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    height: 10rem;
+}
+
+.navbar-nav{
+    display: flex;
+    width: 100%;
+}
+
+.nav_box1{
+    margin-top: 2rem;
+    width: 5%;
+}
+
+.nav_box2{
+    margin-top: 2.5rem;
+    width: 15%;
+}
+
+.nav_box3{
+    width: 40%;
+}
+
+.nav_box4{
+    display: flex;
+    justify-content: right;
+    margin-right: 0;
+    width: 40%;
+}
+
+.name:hover{
+    color: #DFD6D0;
+}
+
+.btn{
+    background: transparent;
+    border-color: #DFD6D0;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #DFD6D0;
+    color: #0F0F25;
+}
+
+a{
+    color: #DFD6D0;
+    text-decoration: none;
+}
+
+a:hover{
+    background: none;
+    text-decoration: none;
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.navbar-fixed-top .navbar-nav > li > .name:hover{
+    background: none;
+    text-decoration: none;
+    color: #DFD6D0;
+}
+
+.container{
+    display: flex;
+}
+
+.box1,
+.box2,
+.box3,
+.about{
+    margin-top: 20rem;
+}
+
+.box1,
+.box3{
+    width: 10%;
+}
+
+.box2{
+    width: 80%;
+    text-align: center;
+}
+
+.about{
+    padding: 2rem 5rem;
+    text-align: left;
+    display: flex;
+    background: #772C53;
+    border: #DFD6D0;
+    border-radius: 2%;
+    cursor: default;
+}
+
+.about_box1{
+    width: 70%;
+    text-align: left;
+    justify-content: left;
+}
+
+.about_box2{
+    margin-top: 10rem;
+    width: 30%;
+    justify-content: right;
+}
+
+.top_button{
+    bottom: 7rem;
+    right: 5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+}
+
+.footer{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    cursor: default;
+}
