@@ -10,12 +10,6 @@ body{
     transition: 0.3s;
 }
 
-/*
-.box-mode{
-
-}
-*/
-
 .nav_menu,
 h1,
 h2{
@@ -147,6 +141,45 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
     height: 5rem;
-    margin-top: 15rem;
+    margin-top: 14.5rem;
     cursor: default;
+}
+
+/* light mode */
+.background-mode{
+    background: #D0D1FF;
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.nav_menu-mode{
+    background: #C8E7FF;
+}
+
+.name-mode{
+    color: #0F0F25;
+}
+
+.btn-mode{
+    border-color: #0F0F25;
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.btn-mode:hover{
+    background: #C0FDFF;
+    transition: 0.3s;
+}
+
+.btn_a-mode{
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.contact_box-mode{
+    background: #C8E7FF;
+}
+
+.footer-mode{
+    background: #C8E7FF;
 }

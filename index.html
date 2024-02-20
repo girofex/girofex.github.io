@@ -28,7 +28,7 @@
         
     </div>
     -->
-    <nav class="nav_menu navbar-fixed-top" style="z-index: 0">
+    <nav id="nav" class="nav_menu navbar-fixed-top" style="z-index: 0">
         <div class="nav_container">
             <ul class="nav navbar-nav">
                 <div class="nav_box1">
@@ -41,23 +41,21 @@
 
                 <div class="nav_box2">
                     <li>
-                        <a class="name" href="index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
+                        <a id="name" class="name" href="index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
                     </li>
                 </div>
 
-                <div class="nav_box3">
-
-                </div>
+                <div class="nav_box3"></div>
 
                 <div class="nav_box4">
                     <li>
-                        <button type="button" class="btn">
-                            <a href="projects/projects.html">Projects</a>
+                        <button type="button" id="btn1" class="btn">
+                            <a id="btn_a1" href="projects/projects.html">Projects</a>
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="btn">
-                            <a href="contacts/contacts.html">Contacts</a>
+                        <button type="button" id="btn2" class="btn">
+                            <a id="btn_a2" href="contacts/contacts.html">Contacts</a>
                         </button>
                     </li>
                 </div>
@@ -82,15 +80,15 @@
             <div class="about" id="about">               
                 <div class="about_box1">
                     <h1>About me</h1>
-                    <h2><img src="img/light pin.png" style="margin-right: 1rem">Living in: </h2>
+                    <h2><img id="pin" src="img/light pin.png" style="margin-right: 1rem">Living in: </h2>
                         <p style="font-size: 2rem">Finale Ligure, Italy</p>
-                    <h2><img src="img/light language.png" style="width: 3rem; margin-right: 1rem">Languages spoken: </h2>
+                    <h2><img id="lang" src="img/light language.png" style="width: 3rem; margin-right: 1rem">Languages spoken: </h2>
                         <p style="font-size: 2rem">Italian and English</p>
-                    <h2><img src="img/light heart.png" style="width: 3rem; margin-right: 1rem; margin-bottom: 1rem">Interests: </h2>
+                    <h2><img id="heart" src="img/light heart.png" style="width: 3rem; margin-right: 1rem; margin-bottom: 1rem">Interests: </h2>
                         <p style="font-size: 2rem">...</p>
                     
-                    <button type="button" class="btn" style="margin-top: 10rem; margin-bottom: 2rem">
-                        <a href="contacts/contacts.html">CV</a>
+                    <button type="button" id="btn3" class="btn" style="margin-top: 10rem; margin-bottom: 2rem">
+                        <a id="btn_a3" href="contacts/contacts.html">CV</a>
                     </button>
                 </div>
                 
@@ -103,7 +101,7 @@
         <div class="box3">
             <div class="top_button" id="top_button" onclick="GoTop()">
                 <a href="#head">
-                    <img src="img/light arrow.png" style="width: 5rem" alt="Go to the top">
+                    <img id="top" src="img/light arrow.png" style="width: 5rem" alt="Go to the top">
                 </a>
             </div>
         </div>

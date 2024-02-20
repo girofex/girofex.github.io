@@ -1,6 +1,12 @@
-- luna e sole per switch da tema scuro a chiaro
 - download cv
-- tema chiaro
+
+- progetti nel portfolio, se sono dietro la navbar, in hover sovrastano la navbar
+- icone progetti on hover devono cambiare src
+- dopo che clicco un progetto il link diventa blu sottolineato
+
 - include navbar
-- hover icon change mode
-- bottone navbar transizione nelle scritte
+- bottone navbar le scritte rimangono bianche se non ci vado totalmente sopra
+
+- samsung avatar invece che foto
+
+- controlla responsive

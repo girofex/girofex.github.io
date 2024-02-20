@@ -4,12 +4,6 @@ body{
     transition: 0.3s;
 }
 
-.background-mode{
-    background: #D0D1FF;
-    color: #0F0F25;
-    transition: 0.3s;
-}
-
 .nav_menu,
 h1,
 h2,
@@ -136,10 +130,6 @@ a:hover{
     cursor: default;
 }
 
-.about-mode{
-    background: #C8E7FF;
-}
-
 .about_box1{
     width: 70%;
     text-align: left;
@@ -173,6 +163,41 @@ a:hover{
     margin-top: 10rem;
     margin-bottom: 0;
     cursor: default;
+}
+
+/* light mode */
+.background-mode{
+    background: #D0D1FF;
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.nav_menu-mode{
+    background: #C8E7FF;
+}
+
+.name-mode{
+    color: #0F0F25;
+}
+
+.btn-mode{
+    border-color: #0F0F25;
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.btn-mode:hover{
+    background: #C0FDFF;
+    transition: 0.3s;
+}
+
+.btn_a-mode{
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.about-mode{
+    background: #C8E7FF;
 }
 
 .footer-mode{

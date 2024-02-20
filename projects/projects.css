@@ -180,3 +180,47 @@ a:hover{
     margin-top: 15rem;
     cursor: default;
 }
+
+/* light mode */
+.background-mode{
+    background: #D0D1FF;
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.nav_menu-mode{
+    background: #C8E7FF;
+}
+
+.name-mode{
+    color: #0F0F25;
+}
+
+.btn-mode{
+    border-color: #0F0F25;
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.btn-mode:hover{
+    background: #C0FDFF;
+    transition: 0.3s;
+}
+
+.btn_a-mode{
+    color: #0F0F25;
+    transition: 0.3s;
+}
+
+.project_box-mode{
+    background: #C8E7FF;
+}
+
+.project_box-mode:hover{
+    background: #C0FDFF;
+    transform: scale(1.05);
+}
+
+.footer-mode{
+    background: #C8E7FF;
+}
