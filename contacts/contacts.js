@@ -1,9 +1,9 @@
 var linkedin = document.getElementById("linkedin");
 var github = document.getElementById("github");
 var btn = document.querySelectorAll(".btn");
+var mode = document.getElementById("mode");
 
 function switchMode() {
-   var mode = document.getElementById("mode");
    var email = document.getElementById("email");
 
    if (mode.src.includes("moon.png")) {
@@ -45,6 +45,10 @@ function switchMode() {
 
 //sound effect
 var buttonSound = document.getElementById("raindrop");
+var meSound = document.getElementById("tell");
+meSound.volume = 0.3;
+var modeSound = document.getElementById("swoosh");
+modeSound.playbackRate = 1.5;
 
 btn.forEach(function (button) {
    button.addEventListener("click", function () {
@@ -58,6 +62,15 @@ linkedin.addEventListener("click", function () {
 
 github.addEventListener("click", function () {
    buttonSound.play();
+});
+
+var me = document.getElementById("me");
+me.addEventListener("click", function() {
+    meSound.play();
+});
+
+mode.addEventListener("click", function() {
+   modeSound.play();
 });
 
 function handleButtonClick(destination, openInNewWindow) {

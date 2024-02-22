@@ -25,6 +25,7 @@ h2{
 
 p{
     font-family: "Comfortaa", sans-serif;
+    font-size: 2rem;
     cursor: default;
 }
 
@@ -137,6 +138,12 @@ a:hover{
     cursor: default;
 }
 
+.container > .box2 > .contact_box > h2 > img{
+    width: 3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
 .box3 > img{
     width: 25rem;
     height: 25rem;
@@ -145,6 +152,7 @@ a:hover{
     position: -webkit-sticky;
     position: sticky;
     position: fixed;
+    cursor: pointer;
 }
 
 .footer{

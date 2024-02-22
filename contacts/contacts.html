@@ -31,9 +31,7 @@
                     </li>
                 </div>
 
-                <div class="nav_box3">
-
-                </div>
+                <div class="nav_box3"></div>
 
                 <div class="nav_box4">
                     <li>
@@ -59,27 +57,34 @@
                 <h1>You can find me on</h1>
 
                 <h2 style="text-align: center">
-                    <img id="linkedin" src="../img/light linkedin.png" style="width: 3rem; margin-right: 1rem; cursor: pointer" onclick="handleButtonClick('https://www.linkedin.com/in/federica-tamerisco-a3b3971bb/', true)">
-
-                    <img id="github" src="../img/light github.png" style="width: 3rem; margin-right: 1rem; cursor: pointer" onclick="handleButtonClick('https://github.com/girofex/', true)">
+                    <img id="linkedin" src="../img/light linkedin.png" onclick="handleButtonClick('https://www.linkedin.com/in/federica-tamerisco-a3b3971bb/', true)">
+                    <img id="github" src="../img/light github.png" onclick="handleButtonClick('https://github.com/girofex/', true)">
                 </h2>
                 
-                <h2><img id="email" src="../img/light at.png" style="width: 3rem; margin-right: 1rem; margin-bottom: 0.5rem">Email: </h2>
-                    <p style="font-size: 2rem">f.tamerisco@gmail.com</p>
+                <h2><img id="email" src="../img/light at.png" style="margin-bottom: 0.5rem">Email: </h2>
+                    <p>f.tamerisco@gmail.com</p>
             </div>
         </div>
 
         <div class="box3">
-            <img src="../img/me2.gif" alt="Emoji">
+            <img id="me" src="../img/me2.gif" alt="Emoji">
         </div>
     </div>
 
     <div class="footer">
-        <p style="padding: 1.5rem">Federica Tamerisco copyright @2024</p>
+        <p style="font-size: 1.5rem; padding: 1.5rem">Federica Tamerisco copyright @2024</p>
     </div>
 
     <audio id="raindrop">
-        <source src="../raindrop.mp3" type="audio/mp3">
+        <source src="../sfx/raindrop.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="tell">
+        <source src="../sfx/tell me everything.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="swoosh">
+        <source src="../sfx/swoosh.mp3" type="audio/mp3">
     </audio>
 
     <script src="contacts.js"></script>

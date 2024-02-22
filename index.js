@@ -6,10 +6,10 @@ document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarT
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
 var btn = document.querySelectorAll(".btn");
+var mode = document.getElementById("mode");
 
 function switchMode() {
     //imgs and scrollbar
-    var mode = document.getElementById("mode");
     var pin = document.getElementById("pin");
     var lang = document.getElementById("lang");
     var heart = document.getElementById("heart");
@@ -60,6 +60,9 @@ function switchMode() {
     //footer
     var footer = document.querySelector(".footer");
     footer.classList.toggle("footer-mode");
+
+    var themeURL = mode.src;
+    localStorage.setItem('theme', themeURL);
 }
 
 //automatic calculation of age
@@ -87,11 +90,24 @@ setInterval(updateYears, 86400000);
 
 //sound effect
 var buttonSound = document.getElementById("raindrop");
+var meSound = document.getElementById("hello");
+meSound.volume = 0.3;
+var modeSound = document.getElementById("swoosh");
+modeSound.playbackRate = 1.5;
 
 btn.forEach(function(button) {
     button.addEventListener("click", function() {
         buttonSound.play();
     });
+});
+
+var me = document.getElementById("me");
+me.addEventListener("click", function() {
+    meSound.play();
+});
+
+mode.addEventListener("click", function() {
+    modeSound.play();
 });
 
 function handleButtonClick(destination, openInNewWindow) {

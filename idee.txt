@@ -2,4 +2,5 @@
 - include navbar
 - controlla responsive
 - menu hamburger
-- suono sull'emoji e sul cambio tema
+- mantieni tema chiaro/scuro
+- name:hover non bianco se tema chiaro

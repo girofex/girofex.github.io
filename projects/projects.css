@@ -29,6 +29,7 @@ h2{
 
 p{
     font-family: "Comfortaa", sans-serif;
+    font-size: 2rem;
     cursor: default;
 }
 
@@ -154,6 +155,18 @@ a:hover{
     transform: scale(1.05);
 }
 
+.project_box > img{
+    margin-right: 1rem;
+}
+
+.container > .box1 > img{
+    width: 25rem;
+    height: 25rem;
+    left: 10rem;
+    margin-bottom: -2rem;
+    cursor: pointer;
+}
+
 .top_button{
     bottom: 7rem;
     right: 5rem;
@@ -169,10 +182,9 @@ a:hover{
 
 .footer{
     font-family: "Comfortaa", sans-serif;
-    font-size: 1.5rem;
     text-align: center;
     height: 5rem;
-    margin-top: 10rem;
+    margin-top: 0;
     position: -webkit-sticky;
     position: sticky;
     cursor: default;

@@ -20,6 +20,7 @@ h2{
 
 p{
     font-family: "Comfortaa", sans-serif;
+    font-size: 2rem;
     cursor: default;
 }
 
@@ -103,6 +104,21 @@ a:hover{
     color: #DFD6D0;
 }
 
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
+    top: 9rem;
+    right: 10rem;
+    position: absolute;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-toggle > .glyphicon{
+    top: 3rem;
+    right: -3rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .container{
     display: flex;
 }
@@ -133,16 +149,12 @@ a:hover{
     cursor: default;
 }
 
-.about_box1{
-    width: 70%;
-    text-align: left;
-    justify-content: left;
-}
-
-.about_box2{
+.container > .box2 > .about > img{
+    width: 40rem;
+    height: 40rem;
     margin-top: 10rem;
-    width: 30%;
-    justify-content: right;
+    margin-left: 10rem;
+    cursor: pointer;
 }
 
 .top_button{

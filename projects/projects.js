@@ -31,8 +31,17 @@ var scrollbarThumbBorderColor = "#DFD6D0";
 document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
-var mode = document.getElementById("mode");
-var btn = document.querySelectorAll(".btn");
+
+var mode = document.createElement('img');
+var themeURL = localStorage.getItem('theme');
+var imgElement = document.createElement('img');
+
+// Imposta l'attributo src dell'elemento img con l'URL del tema
+imgElement.src = themeURL;
+
+// Aggiungi l'elemento img al body del documento
+document.body.appendChild(imgElement);
+
 var projectBox = document.querySelectorAll(".project_box");
 
 function switchMode() {
@@ -142,6 +151,10 @@ projectBox[1].addEventListener("mouseleave", function() {
 
 //sound effect
 var buttonSound = document.getElementById("raindrop");
+var meSound = document.getElementById("wow");
+meSound.volume = 0.3;
+var modeSound = document.getElementById("swoosh");
+modeSound.playbackRate = 1.5;
 
 btn.forEach(function(button) {
     button.addEventListener("click", function() {
@@ -153,6 +166,15 @@ projectBox.forEach(function(button) {
     button.addEventListener("click", function() {
         buttonSound.play();
     });
+});
+
+var me = document.getElementById("me");
+me.addEventListener("click", function() {
+    meSound.play();
+});
+
+mode.addEventListener("click", function() {
+    modeSound.play();
 });
 
 function handleButtonClick(destination, openInNewWindow) {
