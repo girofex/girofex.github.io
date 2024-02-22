@@ -1,3 +1,5 @@
 - dopo che clicco un progetto il link diventa blu sottolineato
 - include navbar
-- controlla responsive 
+- controlla responsive
+- menu hamburger
+- suono sull'emoji e sul cambio tema

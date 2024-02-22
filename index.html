@@ -27,7 +27,7 @@
 
                 <div class="nav_box2">
                     <li>
-                        <a id="name" class="name" href="index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
+                        <a class="name" href="index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
                     </li>
                 </div>
 
@@ -35,22 +35,18 @@
 
                 <div class="nav_box4 navbar-header">
                     <li>
-                        <a id="btn_a1" href="projects/projects.html">
-                            <button type="button" id="btn1" class="btn">
-                                Projects
-                            </button>
-                        </a>
+                        <button type="button" class="btn" onclick="handleButtonClick('projects/projects.html', false)">
+                            Projects
+                        </button>
                     </li>
                     <li>
-                        <a id="btn_a2" href="contacts/contacts.html">
-                            <button type="button" id="btn2" class="btn">
-                                Contacts
-                            </button>
-                        </a>
+                        <button type="button" class="btn" onclick="handleButtonClick('contacts/contacts.html', false)">
+                            Contacts
+                        </button>
                     </li>
                 </div>
             </ul>
-            
+
             <!--
             <div class="collapse navbar-collapse" id="hamburger">
                 <ul class="nav navbar-nav">
@@ -79,7 +75,7 @@
                 <br>
             </p>
 
-            <div class="about" id="about">               
+            <div class="about">               
                 <div class="about_box1">
                     <h1>About me</h1>
                     <h2><img id="pin" src="img/light pin.png" style="margin-right: 1rem; margin-bottom: 0.5rem">Living in: </h2>
@@ -89,13 +85,14 @@
                     <h2><img id="heart" src="img/light heart.png" style="width: 3rem; margin-right: 1rem; margin-bottom: 1rem">Interests: </h2>
                         <p style="font-size: 2rem">Music and coffee</p>
                     
-                    <button type="button" id="btn3" class="btn" style="margin-top: 1rem; margin-bottom: 2rem">
-                        <a id="btn_a3" href="CV/FedericaTameriscoCVIt.pdf">CV IT</a>
+                    <button type="button" class="btn" style="margin-top: 1rem; margin-bottom: 2rem" onclick="handleButtonClick('CV/FedericaTameriscoCVIt.pdf', true)">
+                        CV IT
                     </button>
-
-                    <button type="button" id="btn4" class="btn" style="margin-top: 4rem; margin-bottom: 5rem">
-                        <a id="btn_a4" href="CV/FedericaTameriscoCVEng.pdf">CV ENG</a>
+                    
+                    <button type="button" class="btn" style="margin-top: 4rem; margin-bottom: 5rem" onclick="handleButtonClick('CV/FedericaTameriscoCVEn.pdf', true)">
+                        CV ENG
                     </button>
+                    
                 </div>
                 
                 <div class="about_box_2">
@@ -105,7 +102,7 @@
         </div>
 
         <div class="box3">
-            <div class="top_button" id="top_button" onclick="GoTop()">
+            <div class="top_button" onclick="GoTop()">
                 <a href="#head">
                     <img id="top" src="img/light arrow.png" style="width: 5rem" alt="Go to the top">
                 </a>
@@ -113,9 +110,13 @@
         </div>
     </div>
 
-    <div class="footer" id="footer">
+    <div class="footer">
         <p style="padding: 1.5rem">Federica Tamerisco copyright @2024</p>
     </div>
+
+    <audio id="raindrop">
+        <source src="raindrop.mp3" type="audio/mp3">
+    </audio>
 
     <script src="index.js"></script>
 </body>

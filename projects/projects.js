@@ -1,6 +1,7 @@
 //topButton
+var topButton = document.querySelector(".top_button");
+    
 window.addEventListener("scroll", function () {
-    var topButton = document.getElementById("top_button");
     var scrollHeight = window.scrollY;
     var scrollThreshold = 100;
 
@@ -31,6 +32,8 @@ document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarT
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
 var mode = document.getElementById("mode");
+var btn = document.querySelectorAll(".btn");
+var projectBox = document.querySelectorAll(".project_box");
 
 function switchMode() {
     var wolf = document.getElementById("wolf");
@@ -74,32 +77,20 @@ function switchMode() {
     var navbar = document.getElementById("nav");
     navbar.classList.toggle("nav_menu-mode");
 
-    var name = document.getElementById("name");
+    var name = document.querySelector(".name");
     name.classList.toggle("name-mode");
 
     //all btn
-    var btn = document.getElementById("btn1");
-    btn.classList.toggle("btn-mode");
-    btn = document.getElementById("btn2");
-    btn.classList.toggle("btn-mode");
+    btn.forEach(function(btn) {
+        btn.classList.toggle("btn-mode");
+    });
 
-    var btnA = document.getElementById("btn_a1");
-    btnA.classList.toggle("btn_a-mode");
-    btnA = document.getElementById("btn_a2");
-    btnA.classList.toggle("btn_a-mode");
-    btnA = document.getElementById("btn_a3");
-    btnA.classList.toggle("btn_a-mode");
-    btnA = document.getElementById("btn_a4");
-    btnA.classList.toggle("btn_a-mode");
-
-    //about box
-    var projects = document.getElementById("project1");
-    projects.classList.toggle("project_box-mode");
-    projects = document.getElementById("project2");
-    projects.classList.toggle("project_box-mode");
+    projectBox.forEach(function(projectBox) {
+        projectBox.classList.toggle("project_box-mode");
+    })
 
     //footer
-    var footer = document.getElementById("footer");
+    var footer = document.querySelector(".footer");
     footer.classList.toggle("footer-mode");
 }
 
@@ -112,15 +103,13 @@ var html = document.getElementById("html");
 var css = document.getElementById("css");
 var js = document.getElementById("js");
 
-var projectBox1 = document.getElementById("project1");
-
-projectBox1.addEventListener("mouseenter", function() {
+projectBox[0].addEventListener("mouseenter", function() {
     if (mode.src.includes("moon.png")) {
         wolf.src = "../img/dark wolf.png";
     }
 })
 
-projectBox1.addEventListener("mouseleave", function() {
+projectBox[0].addEventListener("mouseleave", function() {
     if (mode.src.includes("moon.png")) {
         wolf.src = "../img/light wolf.png";
         ball.src = "../img/light ball.png";
@@ -131,9 +120,7 @@ projectBox1.addEventListener("mouseleave", function() {
     }
 })
 
-var projectBox2 = document.getElementById("project2");
-
-projectBox2.addEventListener("mouseenter", function() {
+projectBox[1].addEventListener("mouseenter", function() {
     if (mode.src.includes("moon.png")) {
         ball.src = "../img/dark ball.png";
         php.src = "../img/dark php.png";
@@ -143,7 +130,7 @@ projectBox2.addEventListener("mouseenter", function() {
     }
 })
 
-projectBox2.addEventListener("mouseleave", function() {
+projectBox[1].addEventListener("mouseleave", function() {
     if (mode.src.includes("moon.png")) {
         ball.src = "../img/light ball.png";
         php.src = "../img/light php.png";
@@ -152,3 +139,30 @@ projectBox2.addEventListener("mouseleave", function() {
         js.src = "../img/light js.png";
     }
 })
+
+//sound effect
+var buttonSound = document.getElementById("raindrop");
+
+btn.forEach(function(button) {
+    button.addEventListener("click", function() {
+        buttonSound.play();
+    });
+});
+
+projectBox.forEach(function(button) {
+    button.addEventListener("click", function() {
+        buttonSound.play();
+    });
+});
+
+function handleButtonClick(destination, openInNewWindow) {
+    setTimeout(function() {
+        if (openInNewWindow) {
+            if(destination){
+                window.open(destination, '_blank');
+            }
+        } else {
+            window.location.href = destination;
+        }
+    }, 200);
+}

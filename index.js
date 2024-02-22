@@ -5,6 +5,7 @@ var scrollbarThumbBorderColor = "#DFD6D0";
 document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
+var btn = document.querySelectorAll(".btn");
 
 function switchMode() {
     //imgs and scrollbar
@@ -12,7 +13,7 @@ function switchMode() {
     var pin = document.getElementById("pin");
     var lang = document.getElementById("lang");
     var heart = document.getElementById("heart");
-    var topButton = document.getElementById("top");
+    var topButton = document.querySelector(".top_button");
 
     if(mode.src.includes("moon.png")){
         mode.src = "img/sun.png";
@@ -44,34 +45,20 @@ function switchMode() {
     var navbar = document.getElementById("nav");
     navbar.classList.toggle("nav_menu-mode");
 
-    var name = document.getElementById("name");
+    var name = document.querySelector(".name");
     name.classList.toggle("name-mode");
 
     //all btn
-    var btn = document.getElementById("btn1");
-    btn.classList.toggle("btn-mode");
-    btn = document.getElementById("btn2");
-    btn.classList.toggle("btn-mode");
-    btn = document.getElementById("btn3");
-    btn.classList.toggle("btn-mode");
-    btn = document.getElementById("btn4");
-    btn.classList.toggle("btn-mode");
-
-    var btnA = document.getElementById("btn_a1");
-    btnA.classList.toggle("btn_a-mode");
-    btnA = document.getElementById("btn_a2");
-    btnA.classList.toggle("btn_a-mode");
-    btnA = document.getElementById("btn_a3");
-    btnA.classList.toggle("btn_a-mode");
-    btnA = document.getElementById("btn_a4");
-    btnA.classList.toggle("btn_a-mode");
+    btn.forEach(function(btn) {
+        btn.classList.toggle("btn-mode");
+    });
 
     //about box
-    var about = document.getElementById("about");
+    var about = document.querySelector(".about");
     about.classList.toggle("about-mode");
 
     //footer
-    var footer = document.getElementById("footer");
+    var footer = document.querySelector(".footer");
     footer.classList.toggle("footer-mode");
 }
 
@@ -97,3 +84,24 @@ function updateYears(){
 updateYears();
 
 setInterval(updateYears, 86400000);
+
+//sound effect
+var buttonSound = document.getElementById("raindrop");
+
+btn.forEach(function(button) {
+    button.addEventListener("click", function() {
+        buttonSound.play();
+    });
+});
+
+function handleButtonClick(destination, openInNewWindow) {
+    setTimeout(function() {
+        if (openInNewWindow) {
+            if(destination){
+                window.open(destination, '_blank');
+            }
+        } else {
+            window.location.href = destination;
+        }
+    }, 200);
+}

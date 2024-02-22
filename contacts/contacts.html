@@ -27,7 +27,7 @@
 
                 <div class="nav_box2">
                     <li>
-                        <a id="name" class="name" href="../index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
+                        <a class="name" href="../index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
                     </li>
                 </div>
 
@@ -37,18 +37,14 @@
 
                 <div class="nav_box4">
                     <li>
-                        <a id="btn_a1" href="../projects/projects.html">
-                            <button type="button" id="btn1" class="btn">
-                                Projects
-                            </button>
-                        </a>
+                        <button type="button" class="btn" onclick="handleButtonClick('../projects/projects.html', false)">
+                            Projects
+                        </button>
                     </li>
                     <li>
-                        <a id="btn_a2" href="contacts.html">
-                            <button type="button" id="btn2" class="btn">
-                                Contacts
-                            </button>
-                        </a>
+                        <button type="button" class="btn" onclick="handleButtonClick('contacts.html', false)">
+                            Contacts
+                        </button>
                     </li>
                 </div>
             </ul>
@@ -59,17 +55,13 @@
         <div class="box1"></div>
         
         <div class="box2">
-            <div id="contacts" class="contact_box">               
+            <div class="contact_box">               
                 <h1>You can find me on</h1>
-                
-                <h2 style="text-align: center">
-                    <a href="https://www.linkedin.com/in/federica-tamerisco-a3b3971bb/">
-                        <img id="linkedin" src="../img/light linkedin.png" style="width: 3rem; margin-right: 1rem">
-                    </a>
 
-                    <a href="https://github.com/girofex/">
-                        <img id="github" src="../img/light github.png" style="width: 3rem; margin-right: 1rem">
-                    </a>
+                <h2 style="text-align: center">
+                    <img id="linkedin" src="../img/light linkedin.png" style="width: 3rem; margin-right: 1rem; cursor: pointer" onclick="handleButtonClick('https://www.linkedin.com/in/federica-tamerisco-a3b3971bb/', true)">
+
+                    <img id="github" src="../img/light github.png" style="width: 3rem; margin-right: 1rem; cursor: pointer" onclick="handleButtonClick('https://github.com/girofex/', true)">
                 </h2>
                 
                 <h2><img id="email" src="../img/light at.png" style="width: 3rem; margin-right: 1rem; margin-bottom: 0.5rem">Email: </h2>
@@ -82,9 +74,13 @@
         </div>
     </div>
 
-    <div id="footer" class="footer">
+    <div class="footer">
         <p style="padding: 1.5rem">Federica Tamerisco copyright @2024</p>
     </div>
+
+    <audio id="raindrop">
+        <source src="../raindrop.mp3" type="audio/mp3">
+    </audio>
 
     <script src="contacts.js"></script>
 </body>

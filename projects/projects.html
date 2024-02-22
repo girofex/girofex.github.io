@@ -27,7 +27,7 @@
 
                 <div class="nav_box2">
                     <li>
-                        <a id="name" class="name" href="../index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
+                        <a class="name" href="../index.html" style="text-align: center; font-size: 2rem">FEDERICA TAMERISCO</a>
                     </li>
                 </div>
 
@@ -35,18 +35,14 @@
 
                 <div class="nav_box4">
                     <li>
-                        <a id="btn_a1" href="projects.html">
-                            <button type="button" id="btn1" class="btn">
-                                Projects
-                            </button>
-                        </a>
+                        <button type="button" class="btn" onclick="handleButtonClick('projects.html', false)">
+                            Projects
+                        </button>
                     </li>
                     <li>
-                        <a id="btn_a2" href="../contacts/contacts.html">
-                            <button type="button" id="btn2" class="btn">
-                                Contacts
-                            </button>
-                        </a>
+                        <button type="button" class="btn" onclick="handleButtonClick('../contacts/contacts.html', false)">
+                            Contacts
+                        </button>
                     </li>
                 </div>
             </ul>
@@ -55,58 +51,55 @@
 
     <div class="container">
         <div class="box1">
-            <a id="btn_a3" href="https://github.com/AlessandroSimoni/Lupus-in-Fabula">
-                <div id="project1" class="project_box"> 
-                    <h1>LUPUS IN FABULA</h1>
-                        <p style="font-size: 2rem; text-align: center">(coming soon)</p>
+            <div class="project_box" onclick="handleButtonClick('https://github.com/AlessandroSimoni/Lupus-in-Fabula', true)"> 
+                <h1>LUPUS IN FABULA</h1>
+                    <p style="font-size: 2rem; text-align: center">(coming soon)</p>
                                     
-                        <h2 style="text-align: center">
-                            <img id="wolf" src="../img/light wolf.png" style="width: 5rem; margin-right: 1rem">
-                        </h2>
-                                        
-                        <h2>Info:</h2>
-                            <p style="font-size: 2rem">Android game</p>
-
-                        <h2>Skills:</h2>
-                                        
-
-                        <h2>Roles:</h2>
-                            <p style="font-size: 2rem">Designer & Developer</p>
-                                        
-                        <h2>Collaborator:</h2>
-                            <p style="font-size: 2rem">...</p>
-                </div>
-            </a>
-        </div>
-        
-        <div class="box2">
-            <a id="btn_a4" href="https://github.com/girofex/Underdogs">
-                <div id="project2" class="project_box">   
-                    <h1>UNDERDOGS</h1>
                     <h2 style="text-align: center">
-                        <img id="ball" src="../img/light ball.png" style="width: 5rem; margin-right: 1rem">
+                        <img id="wolf" src="../img/light wolf.png" style="width: 5rem; margin-right: 1rem">
                     </h2>
-                        
+                                        
                     <h2>Info:</h2>
-                        <p style="font-size: 2rem">Website for soccer players looking for a team or viceversa</p>
+                        <p style="font-size: 2rem">Android game</p>
 
                     <h2>Skills:</h2>
-                        <img id="php" src="../img/light php.png" style="width: 3rem; margin-right: 1rem">
-                        <img id="html" src="../img/light html.png" style="width: 3rem; margin-right: 1rem">
-                        <img id="css" src="../img/light css.png" style="width: 3.6rem; margin-right: 1rem">
-                        <img id="js" src="../img/light js.png" style="width: 3.2rem; margin-right: 1rem">
+                                        
 
                     <h2>Roles:</h2>
                         <p style="font-size: 2rem">Designer & Developer</p>
-                        
+                                        
                     <h2>Collaborator:</h2>
-                        <p style="font-size: 2rem">Alessandro Simoni</p>
-                </div>
-            </a>
+                        <p style="font-size: 2rem">...</p>
+            </div>
+        </div>
+        
+        <div class="box2">
+            <div class="project_box" onclick="handleButtonClick('https://github.com/girofex/Underdogs', true)">   
+                <h1>UNDERDOGS</h1>
+
+                <h2 style="text-align: center">
+                    <img id="ball" src="../img/light ball.png" style="width: 5rem; margin-right: 1rem">
+                </h2>
+                        
+                <h2>Info:</h2>
+                    <p style="font-size: 2rem">Website for soccer players looking for a team or viceversa</p>
+
+                <h2>Skills:</h2>
+                    <img id="php" src="../img/light php.png" style="width: 3rem; margin-right: 1rem">
+                    <img id="html" src="../img/light html.png" style="width: 3rem; margin-right: 1rem">
+                    <img id="css" src="../img/light css.png" style="width: 3.6rem; margin-right: 1rem">
+                    <img id="js" src="../img/light js.png" style="width: 3.2rem; margin-right: 1rem">
+
+                <h2>Roles:</h2>
+                    <p style="font-size: 2rem">Designer & Developer</p>
+                        
+                <h2>Collaborator:</h2>
+                    <p style="font-size: 2rem">Alessandro Simoni</p>
+            </div>
         </div>
 
         <div class="box3">
-            <div class="top_button" id="top_button" onclick="GoTop()">
+            <div class="top_button" onclick="GoTop()">
                 <a href="#head">
                     <img id="top" src="../img/light arrow.png" style="width: 5rem" alt="Go to the top">
                 </a>
@@ -114,9 +107,13 @@
         </div>
     </div>
 
-    <div id="footer" class="footer">
+    <div class="footer">
         <p style="padding: 1.5rem">Federica Tamerisco copyright @2024</p>
     </div>
+
+    <audio id="raindrop">
+        <source src="../raindrop.mp3" type="audio/mp3">
+    </audio>
 
     <script src="projects.js"></script>
 </body>
