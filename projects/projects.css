@@ -1,5 +1,5 @@
 body{
-    background: #44143C;
+    background: #772C53;
     color: #DFD6D0;
     transition: 0.3s;
 }
@@ -9,12 +9,6 @@ body{
     color: #0F0F25;
     transition: 0.3s;
 }
-
-/*
-.box-mode{
-
-}
-*/
 
 .nav_menu,
 h1,
@@ -40,7 +34,7 @@ p{
 
 .nav_menu,
 .footer{
-    background: #772C53;
+    background: #44143C;
 }
 
 .nav_menu{
@@ -146,10 +140,10 @@ a:hover{
     margin-top: 4.3rem;
     padding: 2rem 5rem;
     text-align: left;
-    background: #772C53;
+    background: #44143C;
     border: #DFD6D0;
     border-radius: 2%;
-    cursor: pointer;
+    z-index: -1;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
@@ -177,7 +171,9 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
     height: 5rem;
-    margin-top: 15rem;
+    margin-top: 10rem;
+    position: -webkit-sticky;
+    position: sticky;
     cursor: default;
 }
 

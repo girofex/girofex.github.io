@@ -1,31 +1,6 @@
-//topButton
-window.addEventListener("scroll", function() {
-    var topButton = document.getElementById("top_button");
-    var scrollHeight = window.scrollY;
-    var scrollThreshold = 100;
-
-    if (scrollHeight > scrollThreshold) {
-        topButton.classList.add("visible");
-    } else {
-        topButton.classList.remove("visible");
-    }
-});
-
-function GoTop(){
-    const scroll = () => {
-        const c = document.documentElement.scrollTop || document.body.scrollTop;
-        if (c > 0){
-            window.requestAnimationFrame(scroll);
-            window.scrollTo(0, c - c / 8);
-        }
-    };
-
-    scroll();
-}
-
 //light and dark mode
-var scrollbarTrackColor = "#44143C";
-var scrollbarThumbColor = "#772C53";
+var scrollbarTrackColor = "transparent";
+var scrollbarThumbColor = "#44143C";
 var scrollbarThumbBorderColor = "#DFD6D0";
 document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
@@ -45,8 +20,7 @@ function switchMode() {
         lang.src = "img/dark language.png";
         heart.src = "img/dark heart.png";
         topButton.src = "img/dark arrow.png";
-        scrollbarThumbColor = "#D0D1FF";
-        scrollbarTrackColor = "#C8E7FF";
+        scrollbarThumbColor = "#C8E7FF";
         scrollbarThumbBorderColor = "#0F0F25";
     }else{
         mode.src = "img/moon.png";
@@ -55,7 +29,6 @@ function switchMode() {
         heart.src = "img/light heart.png";
         topButton.src = "img/light arrow.png";
         scrollbarThumbColor = "#44143C";
-        scrollbarTrackColor = "#772C53";
         scrollbarThumbBorderColor = "#DFD6D0";
     }
 
@@ -81,12 +54,16 @@ function switchMode() {
     btn.classList.toggle("btn-mode");
     btn = document.getElementById("btn3");
     btn.classList.toggle("btn-mode");
+    btn = document.getElementById("btn4");
+    btn.classList.toggle("btn-mode");
 
     var btnA = document.getElementById("btn_a1");
     btnA.classList.toggle("btn_a-mode");
     btnA = document.getElementById("btn_a2");
     btnA.classList.toggle("btn_a-mode");
     btnA = document.getElementById("btn_a3");
+    btnA.classList.toggle("btn_a-mode");
+    btnA = document.getElementById("btn_a4");
     btnA.classList.toggle("btn_a-mode");
 
     //about box

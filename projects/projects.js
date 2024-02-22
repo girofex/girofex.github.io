@@ -24,16 +24,16 @@ function GoTop() {
 }
 
 //light and dark mode
-var scrollbarTrackColor = "#44143C";
-var scrollbarThumbColor = "#772C53";
+var scrollbarTrackColor = "transparent";
+var scrollbarThumbColor = "#44143C";
 var scrollbarThumbBorderColor = "#DFD6D0";
 document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
+var mode = document.getElementById("mode");
 
 function switchMode() {
     //imgs and scrollbar
-    var mode = document.getElementById("mode");
     var wolf = document.getElementById("wolf");
     var ball = document.getElementById("ball");
     var php = document.getElementById("php");
@@ -49,8 +49,7 @@ function switchMode() {
         html.src = "../img/dark html.png";
         css.src = "../img/dark css.png";
         js.src = "../img/dark js.png";
-        scrollbarThumbColor = "#D0D1FF";
-        scrollbarTrackColor = "#C8E7FF";
+        scrollbarThumbColor = "#C8E7FF";
         scrollbarThumbBorderColor = "#0F0F25";
     } else {
         mode.src = "../img/moon.png";
@@ -61,7 +60,6 @@ function switchMode() {
         css.src = "../img/light css.png";
         js.src = "../img/light js.png";
         scrollbarThumbColor = "#44143C";
-        scrollbarTrackColor = "#772C53";
         scrollbarThumbBorderColor = "#DFD6D0";
     }
 
@@ -105,3 +103,53 @@ function switchMode() {
     var footer = document.getElementById("footer");
     footer.classList.toggle("footer-mode");
 }
+
+//hover animation
+
+var wolf = document.getElementById("wolf");
+var ball = document.getElementById("ball");
+var php = document.getElementById("php");
+var html = document.getElementById("html");
+var css = document.getElementById("css");
+var js = document.getElementById("js");
+
+var projectBox1 = document.getElementById("project1");
+
+projectBox1.addEventListener("mouseenter", function() {
+    if (mode.src.includes("moon.png")) {
+        wolf.src = "../img/dark wolf.png";
+    }
+})
+
+projectBox1.addEventListener("mouseleave", function() {
+    if (mode.src.includes("moon.png")) {
+        wolf.src = "../img/light wolf.png";
+        ball.src = "../img/light ball.png";
+        php.src = "../img/light php.png";
+        html.src = "../img/light html.png";
+        css.src = "../img/light css.png";
+        js.src = "../img/light js.png";
+    }
+})
+
+var projectBox2 = document.getElementById("project2");
+
+projectBox2.addEventListener("mouseenter", function() {
+    if (mode.src.includes("moon.png")) {
+        ball.src = "../img/dark ball.png";
+        php.src = "../img/dark php.png";
+        html.src = "../img/dark html.png";
+        css.src = "../img/dark css.png";
+        js.src = "../img/dark js.png";
+    }
+})
+
+projectBox2.addEventListener("mouseleave", function() {
+    if (mode.src.includes("moon.png")) {
+        ball.src = "../img/light ball.png";
+        php.src = "../img/light php.png";
+        html.src = "../img/light html.png";
+        css.src = "../img/light css.png";
+        js.src = "../img/light js.png";
+    }
+})

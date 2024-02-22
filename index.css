@@ -1,5 +1,5 @@
 body{
-    background: #44143C;
+    background: #772C53;
     color: #DFD6D0;
     transition: 0.3s;
 }
@@ -25,7 +25,7 @@ p{
 
 .nav_menu,
 .footer{
-    background: #772C53;
+    background: #44143C;
 }
 
 .nav_menu{
@@ -34,6 +34,7 @@ p{
     padding: 1rem 1rem;
     text-decoration: none;
     height: 10rem;
+    width: 100vw;
     box-shadow: 0 0 1rem #0F0F25;
 }
 
@@ -48,8 +49,9 @@ p{
 }
 
 .nav_box2{
-    margin-top: 2.5rem;
-    width: 15%;
+    margin-top: 1.5rem;
+    width: 10vw;
+    text-align: center;
 }
 
 .nav_box3{
@@ -74,6 +76,7 @@ p{
     margin-right: 1.5rem;
     font-size: 2rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -122,10 +125,10 @@ a:hover{
 }
 
 .about{
-    padding: 2rem 5rem;
-    text-align: left;
+    padding: 2rem 5rem 0;
+    margin-top: 10rem;
     display: flex;
-    background: #772C53;
+    background: #44143C;
     border-radius: 2%;
     cursor: default;
 }
@@ -161,7 +164,8 @@ a:hover{
     text-align: center;
     height: 5rem;
     margin-top: 10rem;
-    margin-bottom: 0;
+    position: -webkit-sticky;
+    position: sticky;
     cursor: default;
 }
 

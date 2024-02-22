@@ -1,11 +1,3 @@
-//light and dark mode
-var scrollbarTrackColor = "#44143C";
-var scrollbarThumbColor = "#772C53";
-var scrollbarThumbBorderColor = "#DFD6D0";
-document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
-document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
-document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
-
 function switchMode() {
    //imgs and scrollbar
    var mode = document.getElementById("mode");
@@ -18,22 +10,12 @@ function switchMode() {
       linkedin.src = "../img/dark linkedin.png";
       github.src = "../img/dark github.png";
       email.src = "../img/dark at.png";
-      scrollbarThumbColor = "#D0D1FF";
-      scrollbarTrackColor = "#C8E7FF";
-      scrollbarThumbBorderColor = "#0F0F25";
    } else {
       mode.src = "../img/moon.png";
       linkedin.src = "../img/light linkedin.png";
       github.src = "../img/light github.png";
       email.src = "../img/light at.png";
-      scrollbarThumbColor = "#44143C";
-      scrollbarTrackColor = "#772C53";
-      scrollbarThumbBorderColor = "#DFD6D0";
    }
-
-   document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
-   document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
-   document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
 
    //body
    var bodyElement = document.body;
