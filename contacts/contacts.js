@@ -1,5 +1,4 @@
 function switchMode() {
-   //imgs and scrollbar
    var mode = document.getElementById("mode");
    var linkedin = document.getElementById("linkedin");
    var github = document.getElementById("github");

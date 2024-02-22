@@ -33,7 +33,6 @@ document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scr
 var mode = document.getElementById("mode");
 
 function switchMode() {
-    //imgs and scrollbar
     var wolf = document.getElementById("wolf");
     var ball = document.getElementById("ball");
     var php = document.getElementById("php");
