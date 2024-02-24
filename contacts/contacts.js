@@ -1,18 +1,24 @@
 var linkedin = document.getElementById("linkedin");
 var github = document.getElementById("github");
 var btn = document.querySelectorAll(".btn");
+
 var mode = document.getElementById("mode");
+var themeMode = localStorage.getItem('theme');
 
 function switchMode() {
    var email = document.getElementById("email");
 
    if (mode.src.includes("moon.png")) {
       mode.src = "../img/sun.png";
+      themeMode == "true";
+
       linkedin.src = "../img/dark linkedin.png";
       github.src = "../img/dark github.png";
       email.src = "../img/dark at.png";
    } else {
       mode.src = "../img/moon.png";
+      themeMode == "false";
+
       linkedin.src = "../img/light linkedin.png";
       github.src = "../img/light github.png";
       email.src = "../img/light at.png";
@@ -25,6 +31,9 @@ function switchMode() {
    //navmenu
    var navbar = document.getElementById("nav");
    navbar.classList.toggle("nav_menu-mode");
+
+   var hamburger = document.querySelector(".dropdown");
+    hamburger.classList.toggle("dropdown-mode");
 
    var name = document.querySelector(".name");
    name.classList.toggle("name-mode");
@@ -43,12 +52,12 @@ function switchMode() {
    footer.classList.toggle("footer-mode");
 }
 
+if(themeMode == "true"){
+   switchMode();
+}
+
 //sound effect
 var buttonSound = document.getElementById("raindrop");
-var meSound = document.getElementById("tell");
-meSound.volume = 0.3;
-var modeSound = document.getElementById("swoosh");
-modeSound.playbackRate = 1.5;
 
 btn.forEach(function (button) {
    button.addEventListener("click", function () {
@@ -62,15 +71,6 @@ linkedin.addEventListener("click", function () {
 
 github.addEventListener("click", function () {
    buttonSound.play();
-});
-
-var me = document.getElementById("me");
-me.addEventListener("click", function() {
-    meSound.play();
-});
-
-mode.addEventListener("click", function() {
-   modeSound.play();
 });
 
 function handleButtonClick(destination, openInNewWindow) {

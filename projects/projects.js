@@ -32,26 +32,19 @@ document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarT
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
 
-var mode = document.createElement('img');
-var themeURL = localStorage.getItem('theme');
-var imgElement = document.createElement('img');
-
-// Imposta l'attributo src dell'elemento img con l'URL del tema
-imgElement.src = themeURL;
-
-// Aggiungi l'elemento img al body del documento
-document.body.appendChild(imgElement);
+var mode = document.getElementById("mode");
+var themeMode = localStorage.getItem('theme');
 
 var projectBox = document.querySelectorAll(".project_box");
+var btn = document.querySelectorAll(".btn");
+var wolf = document.getElementById("wolf");
+var ball = document.getElementById("ball");
+var php = document.getElementById("php");
+var html = document.getElementById("html");
+var css = document.getElementById("css");
+var js = document.getElementById("js");
 
 function switchMode() {
-    var wolf = document.getElementById("wolf");
-    var ball = document.getElementById("ball");
-    var php = document.getElementById("php");
-    var html = document.getElementById("html");
-    var css = document.getElementById("css");
-    var js = document.getElementById("js");
-
     if (mode.src.includes("moon.png")) {
         mode.src = "../img/sun.png";
         wolf.src = "../img/dark wolf.png";
@@ -64,6 +57,8 @@ function switchMode() {
         scrollbarThumbBorderColor = "#0F0F25";
     } else {
         mode.src = "../img/moon.png";
+        themeMode == "false";
+
         wolf.src = "../img/light wolf.png";
         ball.src = "../img/light ball.png";
         php.src = "../img/light php.png";
@@ -86,6 +81,9 @@ function switchMode() {
     var navbar = document.getElementById("nav");
     navbar.classList.toggle("nav_menu-mode");
 
+    var hamburger = document.querySelector(".dropdown");
+    hamburger.classList.toggle("dropdown-mode");
+
     var name = document.querySelector(".name");
     name.classList.toggle("name-mode");
 
@@ -103,14 +101,11 @@ function switchMode() {
     footer.classList.toggle("footer-mode");
 }
 
-//hover animation
+if(themeMode == "true"){
+    switchMode();
+}
 
-var wolf = document.getElementById("wolf");
-var ball = document.getElementById("ball");
-var php = document.getElementById("php");
-var html = document.getElementById("html");
-var css = document.getElementById("css");
-var js = document.getElementById("js");
+//hover animation
 
 projectBox[0].addEventListener("mouseenter", function() {
     if (mode.src.includes("moon.png")) {
@@ -151,10 +146,6 @@ projectBox[1].addEventListener("mouseleave", function() {
 
 //sound effect
 var buttonSound = document.getElementById("raindrop");
-var meSound = document.getElementById("wow");
-meSound.volume = 0.3;
-var modeSound = document.getElementById("swoosh");
-modeSound.playbackRate = 1.5;
 
 btn.forEach(function(button) {
     button.addEventListener("click", function() {
@@ -166,15 +157,6 @@ projectBox.forEach(function(button) {
     button.addEventListener("click", function() {
         buttonSound.play();
     });
-});
-
-var me = document.getElementById("me");
-me.addEventListener("click", function() {
-    meSound.play();
-});
-
-mode.addEventListener("click", function() {
-    modeSound.play();
 });
 
 function handleButtonClick(destination, openInNewWindow) {

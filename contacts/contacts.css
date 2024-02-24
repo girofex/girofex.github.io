@@ -30,6 +30,7 @@ p{
 }
 
 .nav_menu,
+.dropdown-menu,
 .footer{
     background: #44143C;
 }
@@ -70,8 +71,10 @@ p{
     width: 40%;
 }
 
-.name:hover{
+.nav_menu > .nav_container > .nav > .nav_box2 > li > .name{
     color: #DFD6D0;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .btn{
@@ -104,6 +107,26 @@ a:hover{
 .navbar-fixed-top .navbar-nav > li > .name:hover{
     background: none;
     text-decoration: none;
+    color: #DFD6D0;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
+    top: 9rem;
+    right: 10rem;
+    position: absolute;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-toggle > .glyphicon{
+    top: 3rem;
+    right: -3rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background: #44143C;
+}
+
+.dropdown-menu > li > a{
     color: #DFD6D0;
 }
 
@@ -152,7 +175,6 @@ a:hover{
     position: -webkit-sticky;
     position: sticky;
     position: fixed;
-    cursor: pointer;
 }
 
 .footer{
@@ -177,7 +199,19 @@ a:hover{
     background: #C8E7FF;
 }
 
-.name-mode{
+.nav_menu > .nav_container > .nav > .nav_box2 > li > .name-mode{
+    color: #0F0F25;
+}
+
+.dropdown-mode .glyphicon{
+    color: #0F0F25;
+}
+
+.dropdown-mode:hover .dropdown-menu{
+    background: #C8E7FF;
+}
+
+.dropdown-mode .dropdown-menu > li > a{
     color: #0F0F25;
 }
 
@@ -203,4 +237,14 @@ a:hover{
 
 .footer-mode{
     background: #C8E7FF;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav_menu .dropdown-toggle{
+        display: block !important;
+    }    
+
+    .nav_menu > .nav_container > .nav > .nav_box4 > li{
+        display: none;
+    }
 }

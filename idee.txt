@@ -1,6 +1,6 @@
-- dopo che clicco un progetto il link diventa blu sottolineato
+- dopo che clicco cv il link diventa blu sottolineato
 - include navbar
 - controlla responsive
-- menu hamburger
-- mantieni tema chiaro/scuro
-- name:hover non bianco se tema chiaro
+- menu hamburger: quadratino bianco che compare, se non sono in index il menù non rimane fermo
+- gif non costante
+- se ricambio in tema scuro non si mantiene
