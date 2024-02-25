@@ -32,8 +32,10 @@ function switchMode() {
    var navbar = document.getElementById("nav");
    navbar.classList.toggle("nav_menu-mode");
 
-   var hamburger = document.querySelector(".dropdown");
-    hamburger.classList.toggle("dropdown-mode");
+   var dropdown = document.querySelector(".dropdown");
+   dropdown.classList.toggle("dropdown-mode");
+   var dropdownMenu = document.querySelector(".dropdown-menu");
+   dropdownMenu.classList.toggle("dropdown-menu-mode");
 
    var name = document.querySelector(".name");
    name.classList.toggle("name-mode");

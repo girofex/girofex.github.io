@@ -1,6 +1,8 @@
 - dopo che clicco cv il link diventa blu sottolineato
 - include navbar
-- controlla responsive
-- menu hamburger: quadratino bianco che compare, se non sono in index il menù non rimane fermo
 - gif non costante
 - se ricambio in tema scuro non si mantiene
+
+RESPONSIVE:
+- container troppo largo
+- top_button non si vede

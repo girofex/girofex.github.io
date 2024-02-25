@@ -121,7 +121,9 @@ a:hover{
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
     top: 9rem;
-    right: 10rem;
+    left: auto;
+    right: 0;
+    background: #44143C;
     position: absolute;
 }
 
@@ -130,13 +132,12 @@ a:hover{
     right: -3rem;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    background: #44143C;
-}
-
 .dropdown-menu > li > a{
     color: #DFD6D0;
+}
+
+.dropdown.open .dropdown-toggle .glyphicon {
+    display: none;
 }
 
 .container{
@@ -235,7 +236,7 @@ a:hover{
     color: #0F0F25;
 }
 
-.dropdown-mode:hover .dropdown-menu{
+.dropdown-menu-mode .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu {
     background: #C8E7FF;
 }
 
