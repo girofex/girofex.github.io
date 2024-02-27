@@ -37,17 +37,26 @@ var themeMode = localStorage.getItem('theme');
 
 var projectBox = document.querySelectorAll(".project_box");
 var btn = document.querySelectorAll(".btn");
+
 var wolf = document.getElementById("wolf");
+var xml = document.getElementById("xml");
+var java = document.getElementById("java");
+
 var ball = document.getElementById("ball");
 var php = document.getElementById("php");
 var html = document.getElementById("html");
 var css = document.getElementById("css");
 var js = document.getElementById("js");
 
+
 function switchMode() {
     if (mode.src.includes("moon.png")) {
         mode.src = "../img/sun.png";
+
         wolf.src = "../img/dark wolf.png";
+        xml.src = "../img/dark xml.png";
+        java.src = "../img/dark java.png";
+
         ball.src = "../img/dark ball.png";
         php.src = "../img/dark php.png";
         html.src = "../img/dark html.png";
@@ -60,6 +69,9 @@ function switchMode() {
         themeMode == "false";
 
         wolf.src = "../img/light wolf.png";
+        xml.src = "../img/light xml.png";
+        java.src = "../img/light java.png";
+
         ball.src = "../img/light ball.png";
         php.src = "../img/light php.png";
         html.src = "../img/light html.png";
@@ -112,17 +124,16 @@ if(themeMode == "true"){
 projectBox[0].addEventListener("mouseenter", function() {
     if (mode.src.includes("moon.png")) {
         wolf.src = "../img/dark wolf.png";
+        xml.src = "../img/dark xml.png";
+        java.src = "../img/dark java.png";
     }
 })
 
 projectBox[0].addEventListener("mouseleave", function() {
     if (mode.src.includes("moon.png")) {
         wolf.src = "../img/light wolf.png";
-        ball.src = "../img/light ball.png";
-        php.src = "../img/light php.png";
-        html.src = "../img/light html.png";
-        css.src = "../img/light css.png";
-        js.src = "../img/light js.png";
+        xml.src = "../img/light xml.png";
+        java.src = "../img/light java.png";
     }
 })
 
