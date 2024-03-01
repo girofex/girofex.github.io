@@ -1,3 +1,4 @@
+- footer sticky
 - dopo che clicco cv il link diventa blu sottolineato
 - include navbar
 - gif non costante
