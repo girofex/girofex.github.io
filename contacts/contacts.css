@@ -182,9 +182,11 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
     height: 5rem;
-    margin-top: 14.6rem;
+    bottom: 0;
     position: -webkit-sticky;
     position: sticky;
+    position: fixed;
+    width: 100%;
     cursor: default;
 }
 
