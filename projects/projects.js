@@ -24,6 +24,9 @@ function GoTop() {
     scroll();
 }
 
+//
+//
+//
 //light and dark mode
 var scrollbarTrackColor = "transparent";
 var scrollbarThumbColor = "#44143C";
@@ -119,8 +122,10 @@ if(themeMode == "true"){
     switchMode();
 }
 
+//
+//
+//
 //hover animation
-
 projectBox[0].addEventListener("mouseenter", function() {
     if (mode.src.includes("moon.png")) {
         wolf.src = "../img/dark wolf.png";
@@ -157,6 +162,9 @@ projectBox[1].addEventListener("mouseleave", function() {
     }
 })
 
+//
+//
+//
 //sound effect
 var buttonSound = document.getElementById("raindrop");
 

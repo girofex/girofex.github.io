@@ -4,12 +4,6 @@ body{
     transition: 0.3s;
 }
 
-.background-mode{
-    background: #D0D1FF;
-    color: #0F0F25;
-    transition: 0.3s;
-}
-
 .nav_menu,
 h1,
 h2{
@@ -86,6 +80,10 @@ p{
     transition: 0.3s;
 }
 
+.btn:focus{
+    color: #DFD6D0;
+}
+
 .btn:hover{
     background: #DFD6D0;
     color: #0F0F25;
@@ -110,18 +108,27 @@ a:hover{
     color: #DFD6D0;
 }
 
+.dropdown{
+    margin-top: -2.5rem;
+    margin-right: 2rem;
+}
+
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
-    top: 9rem;
-    left: auto;
-    right: 0;
+    top: 5rem;
+    left: -6rem;
     background: #44143C;
     position: absolute;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
+    color: #DFD6D0;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-toggle > .glyphicon{
     top: 3rem;
     right: -3rem;
 }
+
 .dropdown-menu > li > a{
     color: #DFD6D0;
 }
@@ -171,7 +178,7 @@ a:hover{
     width: 25rem;
     height: 25rem;
     margin-left: 4rem;
-    bottom: 5.2rem;
+    bottom: 5rem;
     position: -webkit-sticky;
     position: sticky;
     position: fixed;
@@ -182,9 +189,11 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
     height: 5rem;
-    margin-top: 14.6rem;
+    bottom: 0;
     position: -webkit-sticky;
     position: sticky;
+    position: fixed;
+    width: 100%;
     cursor: default;
 }
 
@@ -221,6 +230,10 @@ a:hover{
     transition: 0.3s;
 }
 
+.btn-mode:focus{
+    color: #0F0F25;
+}
+
 .btn-mode:hover{
     background: #C0FDFF;
     transition: 0.3s;
@@ -240,11 +253,75 @@ a:hover{
 }
 
 @media only screen and (max-width: 768px) {
+    .nav_menu{
+        height: 6rem;
+    }
+
+    .logo{
+        margin-top: -2.2rem;
+    }
+    
+    #mode{
+        width: 3rem !important;
+        height: 3rem !important;
+        margin-left: 1.5rem;
+    }
+
+    .nav_menu > .nav_container > .nav > .nav_box2 > li > .name {
+        display: block;
+        font-size: 1rem;
+        width: 1rem !important;
+        height: 1rem !important;
+        margin-top: -1.4rem;
+        margin-left: 4rem;
+    }
+
     .nav_menu .dropdown-toggle{
         display: block !important;
     }    
 
     .nav_menu > .nav_container > .nav > .nav_box4 > li{
         display: none;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.5rem !important;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    .container > .box2 > .about > .about_box{
+        text-align: center !important;
+    }
+
+    .container > .box2 > .about > .about_box > .btn{
+        margin-top: 1rem !important;
+        margin-bottom: 0rem !important;
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    #linkedin,
+    #github,
+    #email{
+        width: 2rem !important;
+        height: 2rem;
+    }
+
+    #me{
+        width: 15rem;
+        height: 15rem;
+        margin-top: 35rem;
+        margin-left: -22rem;
+    }
+
+    .footer > p{
+        font-size: 1rem !important;
     }
 }

@@ -83,6 +83,10 @@ p{
     cursor: pointer;
 }
 
+.btn:focus{
+    color: #DFD6D0;
+}
+
 .btn:hover{
     background: #DFD6D0;
     color: #0F0F25;
@@ -117,6 +121,10 @@ a:hover{
     left: -6rem;
     background: #44143C;
     position: absolute;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
+    color: #DFD6D0;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-toggle > .glyphicon{
@@ -162,7 +170,7 @@ a:hover{
     cursor: default;
 }
 
-.container > .box2 > .about > img{
+#me{
     width: 40rem;
     height: 40rem;
     margin-top: 10rem;
@@ -211,11 +219,11 @@ a:hover{
     color: #0F0F25;
 }
 
-.dropdown-menu-mode .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu {
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu-mode {
     background: #C8E7FF;
 }
 
-.dropdown-mode .dropdown-menu > li > a{
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu-mode > li > a{
     color: #0F0F25;
 }
 
@@ -223,6 +231,10 @@ a:hover{
     border-color: #0F0F25;
     color: #0F0F25;
     transition: 0.3s;
+}
+
+.btn-mode:focus{
+    color: #0F0F25;
 }
 
 .btn-mode:hover{
@@ -243,32 +255,30 @@ a:hover{
     background: #C8E7FF;
 }
 
+/* responsive */
+
 @media only screen and (max-width: 768px) {
     .nav_menu{
         height: 6rem;
-        width: 67%;
     }
 
     .logo{
-        margin-top: -2rem;
+        margin-top: -2.2rem;
     }
     
-    .nav_menu > .nav_container > .nav > .nav_box1 > li > .logo > img{
+    #mode{
         width: 3rem !important;
         height: 3rem !important;
         margin-left: 1.5rem;
     }
 
-    .name{
+    .nav_menu > .nav_container > .nav > .nav_box2 > li > .name {
         display: block;
+        font-size: 1rem;
         width: 1rem !important;
         height: 1rem !important;
         margin-top: -1.4rem;
         margin-left: 4rem;
-    }
-
-    .nav_menu > .nav_container > .nav > .nav_box2 > li > .name {
-        font-size: 1rem;
     }
 
     .nav_menu .dropdown-toggle{
@@ -281,12 +291,12 @@ a:hover{
 
     .box1,
     .box3{
-        width: 1%;
+        width: 15%;
     }
 
     .box2{
         margin-top: 10rem;
-        width: 60%;
+        width: 70%;
     }
 
     h1{
@@ -299,38 +309,44 @@ a:hover{
 
     .about{
         margin-top: 5rem;
-        padding: 1rem 3rem 0;
-    }
-
-    .about_box{
-        text-align: center !important;
+        padding: 2rem 3rem 0;
     }
 
     h2{
         font-size: 1.7rem;
     }
 
+    .container > .box2 > .about > .about_box{
+        text-align: center !important;
+    }
+
     .container > .box2 > .about > .about_box > .btn{
         margin-top: 1rem !important;
-        margin-right: 0rem;
         margin-bottom: 0rem !important;
+        margin-left: 1.5rem;
         font-size: 1.5rem;
     }
 
-    .container > .box2 > .about > .about_box > h2 > img{
+    #pin,
+    #lang,
+    #heart{
         width: 2rem !important;
         height: 2rem;
     }
 
-    .container > .box2 > .about > img{
-        width: 10rem;
-        height: 10rem;
+    #me{
+        width: 15rem;
+        height: 15rem;
         margin-top: 35rem;
-        margin-left: -13rem;
+        margin-left: -18rem;
     }
 
-    .footer{
-        width: 67.2%;
+    .top_button{
+        right: 1.5rem;
+    }
+
+    #top{
+        width: 2rem !important;
     }
 
     .footer > p{

@@ -4,12 +4,6 @@ body{
     transition: 0.3s;
 }
 
-.background-mode{
-    background: #D0D1FF;
-    color: #0F0F25;
-    transition: 0.3s;
-}
-
 .nav_menu,
 h1,
 h2{
@@ -45,12 +39,8 @@ p{
     padding: 1rem 1rem;
     text-decoration: none;
     height: 10rem;
+    width: 100vw;
     box-shadow: 0 0 1rem #0F0F25;
-}
-
-.nav_menu-mode{
-    background: #C8E7FF;
-    color: #0F0F25;
 }
 
 .navbar-nav{
@@ -95,6 +85,10 @@ p{
     transition: 0.3s;
 }
 
+.btn:focus{
+    color: #DFD6D0;
+}
+
 .btn:hover{
     background: #DFD6D0;
     color: #0F0F25;
@@ -119,12 +113,20 @@ a:hover{
     color: #DFD6D0;
 }
 
+.dropdown{
+    margin-top: -2.5rem;
+    margin-right: 2rem;
+}
+
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
-    top: 9rem;
-    left: auto;
-    right: 0;
+    top: 5rem;
+    left: -6rem;
     background: #44143C;
     position: absolute;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
+    color: #DFD6D0;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-toggle > .glyphicon{
@@ -146,8 +148,7 @@ a:hover{
 
 .box1,
 .box2,
-.box3,
-.about{
+.box3{
     margin-top: 20rem;
 }
 
@@ -183,7 +184,7 @@ a:hover{
     margin-right: 1rem;
 }
 
-.container > .box1 > img{
+#me{
     width: 25rem;
     height: 25rem;
     left: 10rem;
@@ -236,8 +237,12 @@ a:hover{
     color: #0F0F25;
 }
 
-.dropdown-menu-mode .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu {
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu-mode {
     background: #C8E7FF;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu-mode > li > a{
+    color: #0F0F25;
 }
 
 .dropdown-mode .dropdown-menu > li > a{
@@ -248,6 +253,10 @@ a:hover{
     border-color: #0F0F25;
     color: #0F0F25;
     transition: 0.3s;
+}
+
+.btn-mode:focus{
+    color: #0F0F25;
 }
 
 .btn-mode:hover{
@@ -273,12 +282,113 @@ a:hover{
     background: #C8E7FF;
 }
 
+/* responsive */
+
 @media only screen and (max-width: 768px) {
+    .nav_menu{
+        height: 6rem;
+    }
+
+    .logo{
+        margin-top: -2.2rem;
+    }
+    
+    #mode{
+        width: 3rem !important;
+        height: 3rem !important;
+        margin-left: 1.5rem;
+    }
+
+    .nav_menu > .nav_container > .nav > .nav_box2 > li > .name {
+        display: block;
+        font-size: 1rem;
+        width: 1rem !important;
+        height: 1rem !important;
+        margin-top: -1.4rem;
+        margin-left: 4rem;
+    }
+
     .nav_menu .dropdown-toggle{
         display: block !important;
-    }    
+    }
 
     .nav_menu > .nav_container > .nav > .nav_box4 > li{
         display: none;
+    }
+
+    .box1{
+        margin-left: -3rem;
+    }
+
+    .box2{
+        margin-left: 1rem;
+    }
+
+    .box1,
+    .box2{
+        margin-top: 5rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    p{
+        font-size: 1.3rem !important;
+    }
+
+    h1,
+    h2,
+    p{
+        text-align: center;
+    }
+
+    .project_box{
+        width: 17rem;
+        display: grid;
+        padding: 1rem 3rem 1rem 2.5rem;
+    }
+
+    #wolf,
+    #xml,
+    #java,
+    #ball,
+    #php,
+    #html,
+    #css,
+    #js{
+        width: 2rem !important;
+        height: 2rem;
+        text-align: center;
+    }
+
+    #xml,
+    #java,
+    #php,
+    #html,
+    #css,
+    #js{
+        margin-left: 4.6rem;
+    }
+
+    #me{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .top_button{
+        right: 1.5rem;
+    }
+
+    #top{
+        width: 2rem !important;
+    }
+
+    .footer > p{
+        font-size: 1rem !important;
     }
 }

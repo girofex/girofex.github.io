@@ -58,6 +58,9 @@ if(themeMode == "true"){
    switchMode();
 }
 
+//
+//
+//
 //sound effect
 var buttonSound = document.getElementById("raindrop");
 

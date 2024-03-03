@@ -1,9 +1,6 @@
-- footer sticky
-- dopo che clicco cv il link diventa blu sottolineato
 - include navbar
-- gif non costante
+- gif non costante: modifica la gif in modo da fare un'unica riproduzione
 - se ricambio in tema scuro non si mantiene
 
 RESPONSIVE:
-- container troppo largo
-- top_button non si vede
+- controlla pulsanti navbar in projects e contacts

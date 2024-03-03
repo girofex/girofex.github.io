@@ -1,3 +1,32 @@
+//topButton
+var topButton = document.querySelector(".top_button");
+    
+window.addEventListener("scroll", function () {
+    var scrollHeight = window.scrollY;
+    var scrollThreshold = 100;
+
+    if (scrollHeight > scrollThreshold) {
+        topButton.classList.add("visible");
+    } else {
+        topButton.classList.remove("visible");
+    }
+});
+
+function GoTop() {
+    const scroll = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(scroll);
+            window.scrollTo(0, c - c / 8);
+        }
+    };
+
+    scroll();
+}
+
+//
+//
+//
 //light and dark mode
 var scrollbarTrackColor = "transparent";
 var scrollbarThumbColor = "#44143C";
@@ -73,6 +102,9 @@ function switchMode() {
     footer.classList.toggle("footer-mode");
 }
 
+//
+//
+//
 //automatic calculation of age
 function calcYears(birthday) {
     var today = new Date();
@@ -95,6 +127,9 @@ function updateYears(){
 updateYears();
 setInterval(updateYears, 86400000);
 
+//
+//
+//
 //sound effect
 var buttonSound = document.getElementById("raindrop");
 
