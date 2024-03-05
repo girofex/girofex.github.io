@@ -117,7 +117,12 @@ a:hover{
     top: 5rem;
     left: -6rem;
     background: #44143C;
+    display: none;
     position: absolute;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu.open{
+    display: block;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
