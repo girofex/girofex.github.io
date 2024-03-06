@@ -1,2 +1,3 @@
-- gif non costante: modifica la gif in modo da fare un'unica riproduzione
-- tema scuro problemi
+- gif:
+    non costante
+    bordo bianco

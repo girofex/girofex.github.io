@@ -34,8 +34,9 @@ var scrollbarThumbBorderColor = "#DFD6D0";
 document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
+
 var mode = document.getElementById("mode");
-localStorage.setItem('theme', false);
+var themeMode = localStorage.getItem('theme');
 
 var btn = document.querySelectorAll(".btn");
 
@@ -97,6 +98,10 @@ function switchMode() {
     //footer
     var footer = document.querySelector(".footer");
     footer.classList.toggle("footer-mode");
+}
+
+if(themeMode == "true"){
+    switchMode();
 }
 
 //

@@ -55,6 +55,7 @@ var js = document.getElementById("js");
 function switchMode() {
     if (mode.src.includes("moon.png")) {
         mode.src = "../img/sun.png";
+        localStorage.setItem('theme', true);
 
         wolf.src = "../img/dark wolf.png";
         xml.src = "../img/dark xml.png";
@@ -69,7 +70,7 @@ function switchMode() {
         scrollbarThumbBorderColor = "#0F0F25";
     } else {
         mode.src = "../img/moon.png";
-        themeMode == "false";
+        localStorage.setItem('theme', false);
 
         wolf.src = "../img/light wolf.png";
         xml.src = "../img/light xml.png";

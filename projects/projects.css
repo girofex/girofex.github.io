@@ -160,8 +160,14 @@ a:hover{
     background: #44143C;
     border: #DFD6D0;
     border-radius: 2%;
-    z-index: -1;
+    cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.project_box > h1,
+.project_box > h2,
+.project_box > p{
+    cursor: pointer;
 }
 
 .project_box:hover{
@@ -172,6 +178,7 @@ a:hover{
 
 .project_box > img{
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 #me{

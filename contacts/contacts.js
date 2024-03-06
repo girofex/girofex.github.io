@@ -10,14 +10,14 @@ function switchMode() {
 
    if (mode.src.includes("moon.png")) {
       mode.src = "../img/sun.png";
-      themeMode == "true";
+      localStorage.setItem('theme', true);
 
       linkedin.src = "../img/dark linkedin.png";
       github.src = "../img/dark github.png";
       email.src = "../img/dark at.png";
    } else {
       mode.src = "../img/moon.png";
-      themeMode == "false";
+      localStorage.setItem('theme', false);
 
       linkedin.src = "../img/light linkedin.png";
       github.src = "../img/light github.png";
