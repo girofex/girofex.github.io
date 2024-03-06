@@ -37,9 +37,6 @@ function switchMode() {
    var dropdownMenu = document.querySelector(".dropdown-menu");
    dropdownMenu.classList.toggle("dropdown-menu-mode");
 
-   var name = document.querySelector(".name");
-   name.classList.toggle("name-mode");
-
    //all btn
    btn.forEach(function (btn) {
       btn.classList.toggle("btn-mode");

@@ -1,6 +1,2 @@
-- js per navbar completo:
-    - name: se in index refresh, altrimenti reindirizza
-    - luna: avvio tema
-
 - gif non costante: modifica la gif in modo da fare un'unica riproduzione
-- se ricambio in tema scuro non si mantiene
+- tema scuro problemi
