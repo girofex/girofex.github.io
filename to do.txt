@@ -1,0 +1,2 @@
+leggero ritardo nel cambio tema delle gif in projects e contacts
+il suono in index non funziona sempre

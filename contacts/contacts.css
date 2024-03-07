@@ -164,10 +164,10 @@ a:hover{
     cursor: pointer;
 }
 
-.box3 > img{
+.box1 > img{
     width: 25rem;
     height: 25rem;
-    margin-left: 4rem;
+    left: 0;
     bottom: 5rem;
     position: -webkit-sticky;
     position: sticky;
@@ -301,7 +301,7 @@ a:hover{
         width: 15rem;
         height: 15rem;
         margin-top: 35rem;
-        margin-left: -22rem;
+        margin-left: 13rem;
     }
 
     .footer > p{
