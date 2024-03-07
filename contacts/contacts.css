@@ -104,10 +104,11 @@ a:hover{
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
-    top: 5rem;
+    top: 6rem;
     left: -6rem;
     background: #44143C;
     position: absolute;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
@@ -202,8 +203,12 @@ a:hover{
     color: #0F0F25;
 }
 
-.dropdown-menu-mode .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu {
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu-mode {
     background: #C8E7FF;
+}
+
+.nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu-mode > li > a{
+    color: #0F0F25;
 }
 
 .dropdown-mode .dropdown-menu > li > a{

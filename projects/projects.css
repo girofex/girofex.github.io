@@ -109,10 +109,11 @@ a:hover{
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
-    top: 5rem;
+    top: 6rem;
     left: -6rem;
     background: #44143C;
     position: absolute;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
