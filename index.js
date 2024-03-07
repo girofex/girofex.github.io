@@ -45,7 +45,8 @@ function switchMode() {
     var pin = document.getElementById("pin");
     var lang = document.getElementById("lang");
     var heart = document.getElementById("heart");
-    var topButton = document.querySelector(".top_button");
+    var gif = document.getElementById("me");
+    var topButton = document.getElementById("top");
 
     if(mode.src.includes("moon.png")){
         mode.src = "img/sun.png";
@@ -54,6 +55,8 @@ function switchMode() {
         pin.src = "img/dark pin.png";
         lang.src = "img/dark language.png";
         heart.src = "img/dark heart.png";
+
+        gif.src = "img/me1 black.gif";
         topButton.src = "img/dark arrow.png";
         scrollbarThumbColor = "#C8E7FF";
         scrollbarThumbBorderColor = "#0F0F25";
@@ -64,6 +67,8 @@ function switchMode() {
         pin.src = "img/light pin.png";
         lang.src = "img/light language.png";
         heart.src = "img/light heart.png";
+
+        gif.src = "img/me1 white.gif";
         topButton.src = "img/light arrow.png";
         scrollbarThumbColor = "#44143C";
         scrollbarThumbBorderColor = "#DFD6D0";

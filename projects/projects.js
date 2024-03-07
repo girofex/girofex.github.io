@@ -53,6 +53,9 @@ var js = document.getElementById("js");
 
 
 function switchMode() {
+    var gif = document.getElementById("me");
+    var topButton = document.getElementById("top");
+
     if (mode.src.includes("moon.png")) {
         mode.src = "../img/sun.png";
         localStorage.setItem('theme', true);
@@ -66,6 +69,10 @@ function switchMode() {
         html.src = "../img/dark html.png";
         css.src = "../img/dark css.png";
         js.src = "../img/dark js.png";
+
+        gif.src = "../img/me2 black.gif";
+        topButton.src = "../img/dark arrow.png";
+
         scrollbarThumbColor = "#C8E7FF";
         scrollbarThumbBorderColor = "#0F0F25";
     } else {
@@ -81,6 +88,10 @@ function switchMode() {
         html.src = "../img/light html.png";
         css.src = "../img/light css.png";
         js.src = "../img/light js.png";
+
+        gif.src = "../img/me2 white.gif";
+        topButton.src = "../img/light arrow.png";
+
         scrollbarThumbColor = "#44143C";
         scrollbarThumbBorderColor = "#DFD6D0";
     }

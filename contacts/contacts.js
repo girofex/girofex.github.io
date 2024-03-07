@@ -7,6 +7,7 @@ var themeMode = localStorage.getItem('theme');
 
 function switchMode() {
    var email = document.getElementById("email");
+   var gif = document.getElementById("me");
 
    if (mode.src.includes("moon.png")) {
       mode.src = "../img/sun.png";
@@ -15,6 +16,8 @@ function switchMode() {
       linkedin.src = "../img/dark linkedin.png";
       github.src = "../img/dark github.png";
       email.src = "../img/dark at.png";
+
+      gif.src = "../img/me3 black.gif";
    } else {
       mode.src = "../img/moon.png";
       localStorage.setItem('theme', false);
@@ -22,6 +25,8 @@ function switchMode() {
       linkedin.src = "../img/light linkedin.png";
       github.src = "../img/light github.png";
       email.src = "../img/light at.png";
+
+      gif.src = "../img/me3 white.gif";
    }
 
    //body
