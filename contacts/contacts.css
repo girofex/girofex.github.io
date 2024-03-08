@@ -1,5 +1,5 @@
 body{
-    background: #772C53;
+    background: #3C096C;
     color: #DFD6D0;
     transition: 0.3s;
 }
@@ -26,7 +26,8 @@ p{
 .nav_menu,
 .dropdown-menu,
 .footer{
-    background: #44143C;
+    background: #3d348b;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu{
@@ -35,7 +36,6 @@ p{
     padding: 1rem 1rem;
     text-decoration: none;
     height: 10rem;
-    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .navbar-nav{
@@ -106,9 +106,8 @@ a:hover{
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
     top: 6rem;
     left: -6rem;
-    background: #44143C;
+    background: #3d348b;
     position: absolute;
-    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
@@ -153,10 +152,11 @@ a:hover{
     margin-top: 4.3rem;
     padding: 2rem 5rem;
     text-align: left;
-    background: #44143C;
+    background: #3d348b;
     border: #DFD6D0;
-    border-radius: 2%;
+    border-radius: 1rem;
     cursor: default;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .container > .box2 > .contact_box > h2 > img{
@@ -165,7 +165,7 @@ a:hover{
     cursor: pointer;
 }
 
-.box1 > img{
+#me{
     width: 25rem;
     height: 25rem;
     left: 0;
@@ -284,15 +284,8 @@ a:hover{
         font-size: 1.7rem;
     }
 
-    .container > .box2 > .about > .about_box{
+    .container > .box2 > .contact_box{
         text-align: center !important;
-    }
-
-    .container > .box2 > .about > .about_box > .btn{
-        margin-top: 1rem !important;
-        margin-bottom: 0rem !important;
-        margin-left: 1.5rem;
-        font-size: 1.5rem;
     }
 
     #linkedin,
@@ -306,7 +299,6 @@ a:hover{
         width: 15rem;
         height: 15rem;
         margin-top: 35rem;
-        margin-left: 13rem;
     }
 
     .footer > p{

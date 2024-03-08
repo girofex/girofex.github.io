@@ -29,7 +29,7 @@ function GoTop() {
 //
 //light and dark mode
 var scrollbarTrackColor = "transparent";
-var scrollbarThumbColor = "#44143C";
+var scrollbarThumbColor = "#3d348b";
 var scrollbarThumbBorderColor = "#DFD6D0";
 document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
 document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
@@ -92,7 +92,7 @@ function switchMode() {
         gif.src = "../img/me2 white.gif";
         topButton.src = "../img/light arrow.png";
 
-        scrollbarThumbColor = "#44143C";
+        scrollbarThumbColor = "#3d348b";
         scrollbarThumbBorderColor = "#DFD6D0";
     }
 

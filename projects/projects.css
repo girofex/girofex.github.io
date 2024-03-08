@@ -1,5 +1,5 @@
 body{
-    background: #772C53;
+    background: #3C096C;
     color: #DFD6D0;
     transition: 0.3s;
 }
@@ -30,7 +30,8 @@ p{
 .nav_menu,
 .dropdown-menu,
 .footer{
-    background: #44143C;
+    background: #3d348b;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu{
@@ -40,7 +41,6 @@ p{
     text-decoration: none;
     height: 10rem;
     width: 100vw;
-    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .navbar-nav{
@@ -111,9 +111,8 @@ a:hover{
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
     top: 6rem;
     left: -6rem;
-    background: #44143C;
+    background: #3d348b;
     position: absolute;
-    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
@@ -158,10 +157,11 @@ a:hover{
     margin-top: 4.3rem;
     padding: 2rem 5rem;
     text-align: left;
-    background: #44143C;
+    background: #3d348b;
     border: #DFD6D0;
-    border-radius: 2%;
+    border-radius: 1rem;
     cursor: pointer;
+    box-shadow: 0 0 1rem #0F0F25;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
@@ -186,6 +186,7 @@ a:hover{
     width: 25rem;
     height: 25rem;
     left: 10rem;
+    margin-top: 1rem;
     margin-bottom: -2rem;
 }
 
@@ -377,5 +378,19 @@ a:hover{
 
     .footer > p{
         font-size: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 381px) {
+    h1{
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1.1rem !important;
     }
 }

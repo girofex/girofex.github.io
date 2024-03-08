@@ -1,5 +1,5 @@
 body{
-    background: #772C53;
+    background: #3C096C;
     color: #DFD6D0;
     transition: 0.3s;
 }
@@ -35,7 +35,8 @@ p{
 .nav_menu,
 .dropdown-menu,
 .footer{
-    background: #44143C;
+    background: #3d348b;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu{
@@ -45,7 +46,6 @@ p{
     text-decoration: none;
     height: 10rem;
     width: 100vw;
-    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .navbar-nav{
@@ -105,7 +105,7 @@ a{
 a:hover{
     background: none;
     text-decoration: none;
-    color: #0F0F25;
+    color: #3d348b;
     transition: 0.3s;
 }
 
@@ -117,9 +117,8 @@ a:hover{
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu{
     top: 6rem;
     left: -6rem;
-    background: #44143C;
+    background: #3d348b;
     position: absolute;
-    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
@@ -164,9 +163,10 @@ a:hover{
     padding: 2rem 5rem 0;
     margin-top: 10rem;
     display: flex;
-    background: #44143C;
-    border-radius: 2%;
+    background: #3d348b;
+    border-radius: 1rem;
     cursor: default;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 #me{
@@ -223,7 +223,7 @@ a:hover{
 }
 
 .btn-mode{
-    border-color: #0F0F25;
+    border-color: #3d348b;
     color: #0F0F25;
     transition: 0.3s;
 }
@@ -301,7 +301,11 @@ a:hover{
 
     .about{
         margin-top: 5rem;
-        padding: 2rem 3rem 0;
+        padding: 2rem 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     h2{
@@ -329,8 +333,9 @@ a:hover{
     #me{
         width: 15rem;
         height: 15rem;
-        margin-top: 35rem;
-        margin-left: -16.8rem;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .top_button{
