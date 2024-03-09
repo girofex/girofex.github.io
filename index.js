@@ -5,16 +5,16 @@ window.addEventListener("scroll", function () {
     var scrollHeight = window.scrollY;
     var scrollThreshold = 100;
 
-    if (scrollHeight > scrollThreshold) {
+    if (scrollHeight > scrollThreshold)
         topButton.classList.add("visible");
-    } else {
+    else
         topButton.classList.remove("visible");
-    }
 });
 
 function GoTop() {
     const scroll = () => {
         const c = document.documentElement.scrollTop || document.body.scrollTop;
+
         if (c > 0) {
             window.requestAnimationFrame(scroll);
             window.scrollTo(0, c - c / 8);
@@ -37,15 +37,14 @@ document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scr
 
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
-
 var btn = document.querySelectorAll(".btn");
+var emoji = document.getElementById("me");
 
 function switchMode() {
     //imgs and scrollbar
     var pin = document.getElementById("pin");
     var lang = document.getElementById("lang");
     var heart = document.getElementById("heart");
-    var gif = document.getElementById("me");
     var topButton = document.getElementById("top");
 
     if(mode.src.includes("moon.png")){
@@ -56,7 +55,7 @@ function switchMode() {
         lang.src = "img/dark language.png";
         heart.src = "img/dark heart.png";
 
-        gif.src = "img/me1 black.gif";
+        emoji.src = "img/me1 black.mp4";
         topButton.src = "img/dark arrow.png";
         scrollbarThumbColor = "#C8E7FF";
         scrollbarThumbBorderColor = "#0F0F25";
@@ -68,7 +67,7 @@ function switchMode() {
         lang.src = "img/light language.png";
         heart.src = "img/light heart.png";
 
-        gif.src = "img/me1 white.gif";
+        emoji.src = "img/me1 white.mp4";
         topButton.src = "img/light arrow.png";
         scrollbarThumbColor = "#3d348b";
         scrollbarThumbBorderColor = "#DFD6D0";
@@ -134,9 +133,8 @@ function calcYears(birthday) {
     var bd = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate());
     var years = today.getFullYear() - birthday.getFullYear();
 
-    if (today < bd){
+    if(today < bd)
         years--;
-    }
     
     return years;
 }
@@ -154,7 +152,8 @@ setInterval(updateYears, 86400000);
 //
 //
 //sound effect
-var buttonSound = document.getElementById("raindrop");
+var buttonSound = new Audio();
+buttonSound.src = "raindrop.mp3";
 
 btn.forEach(function(button) {
     button.addEventListener("click", function() {
@@ -164,12 +163,42 @@ btn.forEach(function(button) {
 
 function handleButtonClick(destination, openInNewWindow) {
     setTimeout(function() {
-        if (openInNewWindow) {
-            if(destination){
+        if(openInNewWindow){
+            if(destination)
                 window.open(destination, '_blank');
-            }
-        } else {
-            window.location.href = destination;
         }
+        
+        else
+            window.location.href = destination;
     }, 200);
 }
+
+//
+//
+//
+//mp4
+let videoPlayed = false;
+
+window.addEventListener("scroll", function () {
+    const viewportHeight = window.innerHeight;
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    const startPlayingHeight = viewportHeight * 0.55;
+
+    if(scrollPosition >= startPlayingHeight && !videoPlayed){
+        emoji.play();
+        videoPlayed = true;
+    }
+});
+
+emoji.addEventListener("mouseenter", function() {
+    emoji.play();
+});
+
+emoji.addEventListener("mouseleave", function() {
+    if(emoji.ended)
+        emoji.pause();
+});
+
+emoji.addEventListener("ended", function() {
+    emoji.pause();
+});

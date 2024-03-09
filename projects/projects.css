@@ -31,7 +31,6 @@ p{
 .dropdown-menu,
 .footer{
     background: #3d348b;
-    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu{
@@ -41,6 +40,7 @@ p{
     text-decoration: none;
     height: 10rem;
     width: 100vw;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .navbar-nav{
@@ -78,7 +78,6 @@ p{
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     font-size: 2rem;
-    transition: 0.3s;
 }
 
 .btn:focus{
@@ -113,6 +112,7 @@ a:hover{
     left: -6rem;
     background: #3d348b;
     position: absolute;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
@@ -162,7 +162,7 @@ a:hover{
     border-radius: 1rem;
     cursor: pointer;
     box-shadow: 0 0 1rem #0F0F25;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .project_box > h1,
@@ -187,7 +187,7 @@ a:hover{
     height: 25rem;
     left: 10rem;
     margin-top: 1rem;
-    margin-bottom: -2rem;
+    margin-bottom: -2.5rem;
 }
 
 .top_button{
@@ -211,6 +211,7 @@ a:hover{
     position: -webkit-sticky;
     position: sticky;
     cursor: default;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 /*light mode*/
@@ -243,7 +244,6 @@ a:hover{
 .btn-mode{
     border-color: #0F0F25;
     color: #0F0F25;
-    transition: 0.3s;
 }
 
 .btn-mode:focus{
@@ -257,7 +257,6 @@ a:hover{
 
 .btn_a-mode{
     color: #0F0F25;
-    transition: 0.3s;
 }
 
 .project_box-mode{

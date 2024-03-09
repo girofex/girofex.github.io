@@ -4,10 +4,10 @@ var btn = document.querySelectorAll(".btn");
 
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
+var emoji = document.getElementById("me");
 
 function switchMode() {
    var email = document.getElementById("email");
-   var gif = document.getElementById("me");
 
    if (mode.src.includes("moon.png")) {
       mode.src = "../img/sun.png";
@@ -17,7 +17,7 @@ function switchMode() {
       github.src = "../img/dark github.png";
       email.src = "../img/dark at.png";
 
-      gif.src = "../img/me3 black.gif";
+      emoji.src = "../img/me3 black.mp4";
    } else {
       mode.src = "../img/moon.png";
       localStorage.setItem('theme', false);
@@ -26,7 +26,7 @@ function switchMode() {
       github.src = "../img/light github.png";
       email.src = "../img/light at.png";
 
-      gif.src = "../img/me3 white.gif";
+      emoji.src = "../img/me3 white.mp4";
    }
 
    //body
@@ -64,7 +64,8 @@ if(themeMode == "true"){
 //
 //
 //sound effect
-var buttonSound = document.getElementById("raindrop");
+var buttonSound = new Audio();
+buttonSound.src = "../raindrop.mp3";
 
 btn.forEach(function (button) {
    button.addEventListener("click", function () {
@@ -91,3 +92,33 @@ function handleButtonClick(destination, openInNewWindow) {
       }
    }, 200);
 }
+
+//
+//
+//
+//mp4
+let videoPlayed = false;
+
+window.addEventListener("scroll", function () {
+    const viewportHeight = window.innerHeight;
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    const startPlayingHeight = viewportHeight * 0.55;
+
+    if(scrollPosition >= startPlayingHeight && !videoPlayed){
+        emoji.play();
+        videoPlayed = true;
+    }
+});
+
+emoji.addEventListener("mouseenter", function() {
+    emoji.play();
+});
+
+emoji.addEventListener("mouseleave", function() {
+    if(emoji.ended)
+        emoji.pause();
+});
+
+emoji.addEventListener("ended", function() {
+    emoji.pause();
+});

@@ -27,7 +27,6 @@ p{
 .dropdown-menu,
 .footer{
     background: #3d348b;
-    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu{
@@ -36,6 +35,7 @@ p{
     padding: 1rem 1rem;
     text-decoration: none;
     height: 10rem;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .navbar-nav{
@@ -73,7 +73,6 @@ p{
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     font-size: 2rem;
-    transition: 0.3s;
 }
 
 .btn:focus{
@@ -95,7 +94,6 @@ a:hover{
     background: none;
     text-decoration: none;
     color: #0F0F25;
-    transition: 0.3s;
 }
 
 .dropdown{
@@ -108,6 +106,7 @@ a:hover{
     left: -6rem;
     background: #3d348b;
     position: absolute;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 .nav_menu > .nav_container > .nav > .nav_box4 > .dropdown > .dropdown-menu > li > a{
@@ -186,6 +185,7 @@ a:hover{
     position: fixed;
     width: 100%;
     cursor: default;
+    box-shadow: 0 0 1rem #0F0F25;
 }
 
 /*light mode*/
@@ -218,7 +218,6 @@ a:hover{
 .btn-mode{
     border-color: #0F0F25;
     color: #0F0F25;
-    transition: 0.3s;
 }
 
 .btn-mode:focus{
@@ -232,7 +231,6 @@ a:hover{
 
 .btn_a-mode{
     color: #0F0F25;
-    transition: 0.3s;
 }
 
 .contact_box-mode{

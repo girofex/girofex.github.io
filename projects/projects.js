@@ -50,10 +50,9 @@ var php = document.getElementById("php");
 var html = document.getElementById("html");
 var css = document.getElementById("css");
 var js = document.getElementById("js");
-
+var emoji = document.getElementById("me");
 
 function switchMode() {
-    var gif = document.getElementById("me");
     var topButton = document.getElementById("top");
 
     if (mode.src.includes("moon.png")) {
@@ -70,7 +69,7 @@ function switchMode() {
         css.src = "../img/dark css.png";
         js.src = "../img/dark js.png";
 
-        gif.src = "../img/me2 black.gif";
+        emoji.src = "../img/me2 black.mp4";
         topButton.src = "../img/dark arrow.png";
 
         scrollbarThumbColor = "#C8E7FF";
@@ -89,7 +88,7 @@ function switchMode() {
         css.src = "../img/light css.png";
         js.src = "../img/light js.png";
 
-        gif.src = "../img/me2 white.gif";
+        emoji.src = "../img/me2 white.mp4";
         topButton.src = "../img/light arrow.png";
 
         scrollbarThumbColor = "#3d348b";
@@ -175,7 +174,8 @@ projectBox[1].addEventListener("mouseleave", function() {
 //
 //
 //sound effect
-var buttonSound = document.getElementById("raindrop");
+var buttonSound = new Audio();
+buttonSound.src = "../raindrop.mp3";
 
 btn.forEach(function(button) {
     button.addEventListener("click", function() {
@@ -200,3 +200,33 @@ function handleButtonClick(destination, openInNewWindow) {
         }
     }, 200);
 }
+
+//
+//
+//
+//mp4
+let videoPlayed = false;
+
+window.addEventListener("scroll", function () {
+    const viewportHeight = window.innerHeight;
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    const startPlayingHeight = viewportHeight * 0.55;
+
+    if(scrollPosition >= startPlayingHeight && !videoPlayed){
+        emoji.play();
+        videoPlayed = true;
+    }
+});
+
+emoji.addEventListener("mouseenter", function() {
+    emoji.play();
+});
+
+emoji.addEventListener("mouseleave", function() {
+    if(emoji.ended)
+        emoji.pause();
+});
+
+emoji.addEventListener("ended", function() {
+    emoji.pause();
+});
