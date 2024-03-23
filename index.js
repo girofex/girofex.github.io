@@ -44,7 +44,9 @@ function switchMode() {
     //imgs and scrollbar
     var pin = document.getElementById("pin");
     var lang = document.getElementById("lang");
-    var heart = document.getElementById("heart");
+    var music = document.getElementById("music");
+    var cinema = document.getElementById("cinema");
+    var coffee = document.getElementById("coffee");
     var topButton = document.getElementById("top");
 
     if(mode.src.includes("moon.png")){
@@ -53,7 +55,9 @@ function switchMode() {
 
         pin.src = "img/dark pin.png";
         lang.src = "img/dark language.png";
-        heart.src = "img/dark heart.png";
+        music.src = "img/dark music.png";
+        cinema.src = "img/dark cinema.png";
+        coffee.src = "img/dark coffee.png";
 
         emoji.src = "img/me1 black.mp4";
         topButton.src = "img/dark arrow.png";
@@ -65,7 +69,9 @@ function switchMode() {
 
         pin.src = "img/light pin.png";
         lang.src = "img/light language.png";
-        heart.src = "img/light heart.png";
+        music.src = "img/light music.png";
+        cinema.src = "img/light cinema.png";
+        coffee.src = "img/light coffee.png";
 
         emoji.src = "img/me1 white.mp4";
         topButton.src = "img/light arrow.png";
@@ -96,8 +102,10 @@ function switchMode() {
     });
 
     //about box
-    var about = document.querySelector(".about");
-    about.classList.toggle("about-mode");
+    var about = document.querySelectorAll(".about");
+    about.forEach(function(about) {
+        about.classList.toggle("about-mode");
+    });
 
     //footer
     var footer = document.querySelector(".footer");

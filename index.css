@@ -175,6 +175,23 @@ a:hover{
     margin-left: 10rem;
 }
 
+#friends,
+#age,
+#peaky,
+#howl,
+#tick,
+#wild{
+    width: 25rem;
+    height: 35rem;
+    border-radius: 10px;
+}
+
+#howl,
+#tick,
+#wild{
+    margin-top: 1rem;
+}
+
 .top_button{
     bottom: 7rem;
     right: 5rem;
@@ -324,9 +341,10 @@ a:hover{
 
     #pin,
     #lang,
-    #heart{
+    #music,
+    #cinema,
+    #coffee{
         width: 2rem !important;
-        height: 2rem;
     }
 
     #me{
@@ -335,6 +353,23 @@ a:hover{
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #friends,
+    #age,
+    #howl,
+    #tick{
+        margin-left: 1rem;
+    }
+
+    #age,
+    #peaky{
+        margin-top: 1rem;
+    }
+
+    iframe{
+        width: 30rem !important;
+        height: 40rem !important;
     }
 
     .top_button{

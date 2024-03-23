@@ -68,22 +68,19 @@
                 <span id="years"></span>
                 and I'm currently a CS student at the University of Genoa.
                 <br>
-                I'm passionate about technology,
+                I'm passionate about technology but
                 <br>
                 I also like to challenge myself on the visual aspects of my works
-                <br>
-                and I consider myself attentive to details
             </p>
 
             <div class="about">               
                 <div class="about_box" style="text-align: left">
                     <h1>About me</h1>
-                    <h2><img id="pin" src="img/light pin.png" style="margin-bottom: 0.5rem">Living in: </h2>
+                    
+                    <h2><img id="pin" src="img/light pin.png" style="width: 3rem; margin-right: 0.2rem; margin-bottom: 0.5rem">Living in:</h2>
                         <p>Finale Ligure, Italy</p>
-                    <h2><img id="lang" src="img/light language.png" style="width: 3rem; margin-bottom: 0.5rem">Languages spoken: </h2>
+                    <h2><img id="lang" src="img/light language.png" style="width: 3rem; margin-right: 0.2rem; margin-bottom: 0.5rem">Languages spoken:</h2>
                         <p>Italian and English</p>
-                    <h2><img id="heart" src="img/light heart.png" style="width: 3rem; margin-bottom: 1rem">Interests: </h2>
-                        <p>Music and coffee</p>
                     
                     <button type="button" class="btn" style="width: 8.8rem; margin-top: 1rem; margin-bottom: 2rem" onclick="handleButtonClick('CV/FedericaTameriscoCVIt.pdf', true)">
                         CV IT
@@ -96,8 +93,42 @@
                 
                 <video id="me" autoplay="false" muted>
                     <source src="img/me1 white.mp4" type="video/mp4">
-                    Your browser does not support the video tag
                 </video>
+            </div>
+
+            <div class="about">
+                <div class="about_box" style="text-align: left">
+                    <h1>Interests</h1>
+
+                    <h2><img id="music" src="img/light music.png" style="width: 3.5rem; margin-left: -0.6rem; margin-right: 0.1rem; margin-bottom: 0.5rem">Music:</h2>
+                        <p>
+                            I cannot live without it,
+                            <br>
+                            so here's some tunes that make me feel...
+                        </p>
+
+                        <iframe src="https://open.spotify.com/embed/playlist/6VK1abdIeGseZxfgPnpoEd?utm_source=generator&theme=0"
+                            style="border-radius: 10px; width: 70rem; height: 40rem"
+                            frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+
+                    <h2 style="margin-top: 5rem"><img id="cinema" src="img/light cinema.png" style="width: 2.7rem; margin-right: 0.3rem; margin-bottom: 0.5rem">Cinema:</h2>
+                    <p>Some titles that have my heart: </p>
+
+                    <img id="friends" src="img/friends.jpeg" style="margin-right: 1rem">
+                    <img id="age" src="img/ageOfYouth.jpeg" style="margin-right: 1rem">
+                    <img id="peaky" src="img/peakyBlinders.jpeg">
+                    <br>
+                    <img id="howl" src="img/howl.jpeg" style="margin-right: 1rem">
+                    <img id="tick" src="img/tickTickBoom.jpeg" style="margin-right: 1rem">
+                    <img id="wild" src="img/intoTheWild.jpeg">
+                    
+                    <h2 style="margin-top: 5rem"><img id="coffee" src="img/light coffee.png" style="width: 3rem; margin-right: 0.2rem; margin-bottom: 0.5rem">Coffee:</h2>
+                    <p style="margin-bottom: 5rem">
+                        A good caramel macchiato gets me a long way
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -117,5 +148,6 @@
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 </body>
 </html>
