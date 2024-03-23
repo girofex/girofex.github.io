@@ -180,7 +180,10 @@ a:hover{
 #peaky,
 #howl,
 #tick,
-#wild{
+#wild,
+#final,
+#red,
+#tomb{
     width: 25rem;
     height: 35rem;
     border-radius: 10px;
@@ -343,7 +346,8 @@ a:hover{
     #lang,
     #music,
     #cinema,
-    #coffee{
+    #coffee,
+    #game{
         width: 2rem !important;
     }
 
@@ -355,15 +359,17 @@ a:hover{
         margin-right: auto;
     }
 
-    #friends,
-    #age,
-    #howl,
-    #tick{
-        margin-left: 1rem;
+    #peaky,
+    #wild,
+    #tomb{
+        margin-left: -0.73rem;
     }
 
     #age,
-    #peaky{
+    #peaky,
+    #final,
+    #red,
+    #tomb{
         margin-top: 1rem;
     }
 

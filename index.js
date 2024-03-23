@@ -47,6 +47,7 @@ function switchMode() {
     var music = document.getElementById("music");
     var cinema = document.getElementById("cinema");
     var coffee = document.getElementById("coffee");
+    var game = document.getElementById("game");
     var topButton = document.getElementById("top");
 
     if(mode.src.includes("moon.png")){
@@ -58,6 +59,7 @@ function switchMode() {
         music.src = "img/dark music.png";
         cinema.src = "img/dark cinema.png";
         coffee.src = "img/dark coffee.png";
+        game.src = "img/dark game.png";
 
         emoji.src = "img/me1 black.mp4";
         topButton.src = "img/dark arrow.png";
@@ -72,6 +74,7 @@ function switchMode() {
         music.src = "img/light music.png";
         cinema.src = "img/light cinema.png";
         coffee.src = "img/light coffee.png";
+        game.src = "img/light game.png";
 
         emoji.src = "img/me1 white.mp4";
         topButton.src = "img/light arrow.png";
