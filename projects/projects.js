@@ -39,6 +39,7 @@ var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
 
 var projectBox = document.querySelectorAll(".project_box");
+var skillBox = document.querySelector(".skill_box");
 var btn = document.querySelectorAll(".btn");
 
 var wolf = document.getElementById("wolf");
@@ -49,7 +50,13 @@ var ball = document.getElementById("ball");
 var php = document.getElementById("php");
 var html = document.getElementById("html");
 var css = document.getElementById("css");
+var sql = document.getElementById("sql");
 var js = document.getElementById("js");
+
+var cpp = document.getElementById("cplusplus");
+var c = document.getElementById("c");
+var python = document.getElementById("python");
+
 var emoji = document.getElementById("me");
 
 function switchMode() {
@@ -67,7 +74,12 @@ function switchMode() {
         php.src = "../img/dark php.png";
         html.src = "../img/dark html.png";
         css.src = "../img/dark css.png";
+        sql.src = "../img/dark sql.png";
         js.src = "../img/dark js.png";
+
+        cpp.src = "../img/dark c++.png";
+        c.src = "../img/dark c.png";
+        python.src = "../img/dark python.png";
 
         emoji.src = "../img/me2 black.mp4";
         topButton.src = "../img/dark arrow.png";
@@ -86,7 +98,12 @@ function switchMode() {
         php.src = "../img/light php.png";
         html.src = "../img/light html.png";
         css.src = "../img/light css.png";
+        sql.src = "../img/light sql.png";
         js.src = "../img/light js.png";
+
+        cpp.src = "../img/light c++.png";
+        c.src = "../img/light c.png";
+        python.src = "../img/light python.png";
 
         emoji.src = "../img/me2 white.mp4";
         topButton.src = "../img/light arrow.png";
@@ -120,6 +137,8 @@ function switchMode() {
     projectBox.forEach(function(projectBox) {
         projectBox.classList.toggle("project_box-mode");
     })
+
+    skillBox.classList.toggle("project_box-mode");
 
     //footer
     var footer = document.querySelector(".footer");
@@ -156,6 +175,7 @@ projectBox[1].addEventListener("mouseenter", function() {
         php.src = "../img/dark php.png";
         html.src = "../img/dark html.png";
         css.src = "../img/dark css.png";
+        sql.src = "../img/dark sql.png";
         js.src = "../img/dark js.png";
     }
 })
@@ -166,6 +186,7 @@ projectBox[1].addEventListener("mouseleave", function() {
         php.src = "../img/light php.png";
         html.src = "../img/light html.png";
         css.src = "../img/light css.png";
+        sql.src = "../img/light sql.png";
         js.src = "../img/light js.png";
     }
 })

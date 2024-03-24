@@ -171,19 +171,11 @@ a:hover{
 #me{
     width: 40rem;
     height: 40rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-left: 10rem;
 }
 
-#friends,
-#age,
-#peaky,
-#howl,
-#tick,
-#wild,
-#final,
-#red,
-#tomb{
+.poster{
     width: 25rem;
     height: 35rem;
     border-radius: 10px;
@@ -359,10 +351,18 @@ a:hover{
         margin-right: auto;
     }
 
-    #peaky,
-    #wild,
-    #tomb{
-        margin-left: -0.73rem;
+    .poster{
+        width: 20rem;
+        height: 30rem;
+    }
+
+    #friends,
+    #age,
+    #howl,
+    #tick,
+    #final,
+    #red{
+        margin-left: 1rem;
     }
 
     #age,
